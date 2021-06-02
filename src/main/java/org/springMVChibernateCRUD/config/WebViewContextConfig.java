@@ -67,7 +67,7 @@ public class WebViewContextConfig implements WebMvcConfigurer {
         ThymeleafViewResolver resolver = new ThymeleafViewResolver();
 
         resolver.setCharacterEncoding("UTF-8");
-        resolver.setContentType("text/html:charset=utf-8");
+//        resolver.setContentType("text/html:charset=utf-8");
 
         resolver.setTemplateEngine(templateEngine());
         registry.viewResolver(resolver);
