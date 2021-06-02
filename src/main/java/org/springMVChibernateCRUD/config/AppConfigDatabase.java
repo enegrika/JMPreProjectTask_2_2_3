@@ -22,36 +22,47 @@ import java.util.Properties;
 public class AppConfigDatabase {
 
     // to get properties from file we use Environment object from Spring
-    @Autowired
     private Environment env;
 
-    // get properties from classpath file
-    private Properties getHibernateProps() {
-        Properties props = new Properties();
-        props.put("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));
-        props.put("hibernate.show_sql", env.getProperty("hibernate.show_sql"));
-        return props;
+    @Autowired
+    public AppConfigDatabase(Environment env) {
+        this.env = env;
     }
+
+    public AppConfigDatabase(){}
+    // get properties from classpath file
+
+//    private Properties getHibernateProps() {
+//        Properties props = new Properties();
+//        props.put("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));
+//        props.put("hibernate.show_sql", env.getProperty("hibernate.show_sql"));
+//        return props;
+//    }
 
     // get JDBC DATABASE HERE
     @Bean
     public DataSource getDataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName(env.getProperty("db.driver"));
-        dataSource.setUrl("db.url");
-        dataSource.setUsername("db.username");
-        dataSource.setPassword("db.password");
+        dataSource.setUrl(env.getProperty("db.url"));
+        dataSource.setUsername(env.getProperty("db.username"));
+        dataSource.setPassword(env.getProperty("db.password"));
         return dataSource;
     }
 
     // inject database and create session with spring orm hibernate 5
     @Bean
     public LocalSessionFactoryBean getSessionFactory() {
-        LocalSessionFactoryBean sessionFactoryBean = new LocalSessionFactoryBean();
-        sessionFactoryBean.setDataSource(getDataSource());
-        sessionFactoryBean.setHibernateProperties(getHibernateProps());
-        sessionFactoryBean.setAnnotatedClasses(User.class);
-        return sessionFactoryBean;
+        LocalSessionFactoryBean factoryBean = new LocalSessionFactoryBean();
+        factoryBean.setDataSource(getDataSource());
+
+        Properties props = new Properties();
+        props.put("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));
+        props.put("hibernate.show_sql", env.getProperty("hibernate.show_sql"));
+
+        factoryBean.setHibernateProperties(props);
+        factoryBean.setAnnotatedClasses(User.class);
+        return factoryBean;
     }
 
     // binds hibernate session from factory to th thread,

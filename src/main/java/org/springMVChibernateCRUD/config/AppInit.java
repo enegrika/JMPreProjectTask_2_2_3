@@ -3,13 +3,13 @@ package org.springMVChibernateCRUD.config;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-@Configuration
+//@Configuration
 public class AppInit extends AbstractAnnotationConfigDispatcherServletInitializer {
 
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[0];
+        return new Class[]{AppConfigDatabase.class};
     }
 
     // set VIEWRESOLVER class for view jsp etc.

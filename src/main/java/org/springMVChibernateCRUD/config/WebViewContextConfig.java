@@ -17,11 +17,11 @@ import org.thymeleaf.templatemode.TemplateMode;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = "org.springMVChibernateCRUD")
+@ComponentScan("org.springMVChibernateCRUD")
 public class WebViewContextConfig implements WebMvcConfigurer {
 
 
-    private final ApplicationContext applicationContext;
+    private ApplicationContext applicationContext;
 
     public WebViewContextConfig(ApplicationContext applicationContext) {
         this.applicationContext = applicationContext;
@@ -33,14 +33,14 @@ public class WebViewContextConfig implements WebMvcConfigurer {
         // SpringResourceTemplateResolver automatically integrates with Spring's own
         // resource resolution infrastructure, which is highly recommended.
         SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
-        templateResolver.setApplicationContext(this.applicationContext);
+        templateResolver.setApplicationContext(applicationContext);
         templateResolver.setPrefix("/WEB-INF/views/");
         templateResolver.setSuffix(".html");
         // HTML is the default value, added here for the sake of clarity.
-        templateResolver.setTemplateMode(TemplateMode.HTML);
+//        templateResolver.setTemplateMode(TemplateMode.HTML);
         // Template cache is true by default. Set to false if you want
         // templates to be automatically updated when modified.
-        templateResolver.setCacheable(true);
+//        templateResolver.setCacheable(true);
         return templateResolver;
     }
 

@@ -1,12 +1,9 @@
 package org.springMVChibernateCRUD.model;
 
 
-import org.springframework.stereotype.Component;
-
 import javax.persistence.*;
-import java.util.Objects;
 
-@Component
+@Entity
 @Table(name = "users")
 public class User {
 
@@ -16,7 +13,7 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
+    private Long id;
 
     @Column
     private String name;
@@ -32,11 +29,11 @@ public class User {
 
 
     public Long getId() {
-        return Id;
+        return id;
     }
 
     public void setId(Long id) {
-        Id = id;
+        this.id = id;
     }
 
     public String getName() {
@@ -55,23 +52,23 @@ public class User {
         this.email = email;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        User user = (User) o;
-        return Id.equals(user.Id) && Objects.equals(name, user.name) && Objects.equals(email, user.email);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(Id, name, email);
-    }
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (o == null || getClass() != o.getClass()) return false;
+//        User user = (User) o;
+//        return id.equals(user.id) && Objects.equals(name, user.name) && Objects.equals(email, user.email);
+//    }
+//
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(id, name, email);
+//    }
 
     @Override
     public String toString() {
         return "User{" +
-                "Id=" + Id +
+                "id=" + id +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 '}';
