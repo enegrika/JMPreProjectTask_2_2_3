@@ -52,11 +52,20 @@ public class UserController {
             return "/users/newUser";
         }
         userService.addUser(user);
-        return "redirect:/users";
+        return "redirect:/users/";
     }
 
 
     //TODO deleteUser
+    @DeleteMapping(value = "users/{id}")
+    public String deleteUser(@ModelAttribute("userById") User user,
+                             @PathVariable("id") long id, Model model) {
+//        model.addAttribute("userToDelete",user);
+        userService.delete(id);
+        return "redirect:/users/userList";
+    }
+
+
 
 
 

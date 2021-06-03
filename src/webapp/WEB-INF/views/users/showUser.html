@@ -19,12 +19,21 @@
 
 </div>
 
+<!--USER INFROMATION BLOCK-->
 <div th:text="
 'ID : ' + ${userById.getId()} +
 ' , name = ' + ${userById.getName()} +
 ' , email = ' + ${userById.getEmail()}">
 </div>
 
+
+<!--USER DELETE BUTTON block-->
+<div>
+    <form th:method="DELETE" th:action="@{/users/{id}(id=${userById.getId()})}">
+        <input type="submit" value="DELETE">
+    </form>
+
+</div>
 
 </body>
 </html>
