@@ -2,6 +2,7 @@ package org.springMVChibernateCRUD.model;
 
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "users")

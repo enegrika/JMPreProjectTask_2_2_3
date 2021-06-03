@@ -24,7 +24,7 @@ public class UserDAOImpl implements UserDAO {
     }
 
     @Override
-    public User getUser(int id) {
+    public User getUser(Long id) {
         TypedQuery<User> query = sessionFactory.getCurrentSession().createQuery("from User where id=?1");
         query.setParameter(1, id);
         return query.getSingleResult();
@@ -32,16 +32,16 @@ public class UserDAOImpl implements UserDAO {
 
     @Override
     public void addUser(User user) {
+        sessionFactory.getCurrentSession().save(user);
+    }
+
+    @Override
+    public void update(Long id, User user) {
 
     }
 
     @Override
-    public void update(int id, User user) {
-
-    }
-
-    @Override
-    public void delete(int id) {
+    public void delete(Long id) {
 
     }
 }

@@ -12,12 +12,13 @@ import java.util.List;
 @Transactional
 public class UserServiceImp implements UserService {
 
+    @Autowired
     private UserDAO userDAO;
 
-    @Autowired
-    public UserServiceImp(UserDAO userDAO) {
-        this.userDAO = userDAO;
-    }
+//    @Autowired
+//    public UserServiceImp(UserDAO userDAO) {
+//        this.userDAO = userDAO;
+//    }
 
     //    Enables Spring's transactional behaviour.
 //    Can be applied to a class, an interface or a method.
@@ -32,7 +33,7 @@ public class UserServiceImp implements UserService {
 
     @Transactional(readOnly = true)
     @Override
-    public User getUser(int id) {
+    public User getUser(Long id) {
         return userDAO.getUser(id);
     }
 
@@ -44,13 +45,13 @@ public class UserServiceImp implements UserService {
 
     @Transactional
     @Override
-    public void update(int id, User user) {
+    public void update(Long id, User user) {
         userDAO.update(id, user);
     }
 
     @Transactional
     @Override
-    public void delete(int id) {
+    public void delete(Long id) {
         userDAO.delete(id);
     }
 
