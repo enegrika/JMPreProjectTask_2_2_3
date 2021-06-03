@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <!--    CSS style from BOOTSTRAP using LINK tag-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>ADD NEW USER</title>
+</head>
+
+<body>
+
+<!--// FORM START to ADD NEW USER-->
+<div>
+    <br/>
+    <h4>Please fill the form</h4>
+    <hr/>
+</div>
+<br/>
+<form th:method="POST" th:action="@{/users}" th:object="${newUse}">
+
+    <!--ENTER NAME FIELD-->
+    <label for="name">Enter NAME : </label>
+    <input type="text" th:field="*{name}" id="name">
+
+    <!--    // VALIDATION for FIELD (BindingResult object)-->
+    <br/>
+    <div style="color: red" th:if="${#fields.hasErrors('name')}" th:onerror="*{name}">error validation</div>
+    <br/>
+
+    <!--ENTER EMAIL FIELD-->
+    <br/>
+    <label for="email">Enter EMAIL : </label>
+    <input type="text" th:field="*{email}" id="email">
+
+    <br/>
+    <div style="color: red" th:if="${#fields.hasErrors('email')}" th:onerror="*{email}">error validation</div>
+    <br/>
+
+    <hr/>
+    <!--SUBMIT BUTTON-->
+    <br/>
+    <label for="submit">ADD new User?</label>
+    <input type="submit" value="YES" id="submit">
+    <br/>
+
+</form>
+
+</body>
+
+</html>
