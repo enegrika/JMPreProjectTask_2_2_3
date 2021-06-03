@@ -22,4 +22,26 @@ public class UserDAOImpl implements UserDAO {
         TypedQuery<User> query = sessionFactory.getCurrentSession().createQuery("from User");
         return query.getResultList();
     }
+
+    @Override
+    public User getUser(int id) {
+        TypedQuery<User> query = sessionFactory.getCurrentSession().createQuery("from User where id=?1");
+        query.setParameter(1, id);
+        return query.getSingleResult();
+    }
+
+    @Override
+    public void addUser(User user) {
+
+    }
+
+    @Override
+    public void update(int id, User user) {
+
+    }
+
+    @Override
+    public void delete(int id) {
+
+    }
 }

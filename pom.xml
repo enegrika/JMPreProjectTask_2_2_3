@@ -84,11 +84,11 @@
 
 
         <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
-        <!--        <dependency>-->
-        <!--            <groupId>org.postgresql</groupId>-->
-        <!--            <artifactId>postgresql</artifactId>-->
-        <!--            <version>42.2.20</version>-->
-        <!--        </dependency>-->
+                <dependency>
+                    <groupId>org.postgresql</groupId>
+                    <artifactId>postgresql</artifactId>
+                    <version>42.2.20</version>
+                </dependency>
 
         <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
         <dependency>
@@ -118,12 +118,12 @@
 
         <!--    TESTING DEPENDENCIES-->
 
-        <!--        <dependency>-->
-        <!--            <groupId>junit</groupId>-->
-        <!--            <artifactId>junit</artifactId>-->
-        <!--            <version>4.11</version>-->
-        <!--            <scope>test</scope>-->
-        <!--        </dependency>-->
+                <dependency>
+                    <groupId>junit</groupId>
+                    <artifactId>junit</artifactId>
+                    <version>4.11</version>
+                    <scope>test</scope>
+                </dependency>
     </dependencies>
 
     <build>
