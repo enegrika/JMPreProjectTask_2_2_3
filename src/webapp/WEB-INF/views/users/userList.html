@@ -21,12 +21,17 @@
 
 <hr/>
 <br/>
+
 <!--SHOW LIST-->
 <!--// USER with LINK-->
 <div th:each="user : ${userList}">
+
     <a th:href="@{/users/{id} (id=${user.getId()})} "
-       th:text="'User ID : ' + ${user.getId()} + ' , name= ' + ${user.getName()} + ', email= ' + ${user.getEmail()}">
+       th:text="'User ID : ' + ${user.getId()}
+       + ' , name= ' + ${user.getName()}
+       + ', email= ' + ${user.getEmail()}">
         user object </a>
+
 </div>
 <!--break-->
 <br/>

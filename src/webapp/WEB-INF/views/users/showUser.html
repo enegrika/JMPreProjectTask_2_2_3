@@ -45,10 +45,12 @@
 
 <br/>
 
+
+<!--USER DELETE BUTTON block-->
+<!--WE CAN NOT SEND DELETE REQUEST with"A" tag - should use FORM tag !!!-->
+<!--    ALSO NEED TO put hiddenHttpMethodFilter to AppInit-->
+
 <div>
-    <!--USER DELETE BUTTON block-->
-    <!--WE CAN NOT SEND DELETE REQUEST with"A" tag - should use FORM tag !!!-->
-    <!--    ALSO NEED TO put hiddenHttpMethodFilter to AppInit-->
     <form th:method="DELETE" th:action="@{/users/{id}(id=${userById.getId()})}">
         <input type="submit" value="DELETE">
     </form>
@@ -56,8 +58,8 @@
 
 <br/>
 
+<!--BACK to THE LIST BUTTON-->
 <div>
-    <!--BACK to THE LIST BUTTON-->
     <form th:action="@{/users}">
         <input type="submit" value="BACK to the LIST">
     </form>
