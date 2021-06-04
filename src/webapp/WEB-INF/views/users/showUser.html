@@ -12,18 +12,24 @@
     <title>SHOW USER</title>
 </head>
 <body>
-<div>
-    <br/>
-    <h4>USER</h4>
-    <hr/>
 
+<br/>
+<div>
+    <h4>USER</h4>
 </div>
 
+<hr/>
 <!--USER INFROMATION BLOCK-->
-<div th:text="
-'ID : ' + ${userById.getId()} +
-' , name = ' + ${userById.getName()} +
-' , email = ' + ${userById.getEmail()}">
+<div>
+    <!--        th:text="-->
+    <!--'ID : ' + ${userById.getId()} +-->
+    <!--' , name = ' + ${userById.getName()} +-->
+    <!--' , email = ' + ${userById.getEmail()}"-->
+    <!--     -->
+    <p th:utext="'ID : ' + ${userById.getId()}"></p>
+    <p th:utext="'NAME : ' + ${userById.getName()}"></p>
+    <p th:utext="'EMAIL : ' + ${userById.getEmail()}"></p>
+
 </div>
 
 <br/>
