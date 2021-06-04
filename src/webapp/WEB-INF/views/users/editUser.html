@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+    <title>UPDATE FORM</title>
+
+
+</head>
+
+<body>
+<hr/>
+<br/>
+<form th:method="PATCH" th:action="@{/users/{id}(id=${userById.getId()})}" th:object="${userById}">
+
+    <br/>
+    <label for="name">Edit name:</label>
+    <input type="text" th:field="*{name}" id="name">
+    <div style="color: red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">error validation</div>
+
+
+    <br/>
+    <label for="email">Edit name:</label>
+    <input type="text" th:field="*{email}" id="email">
+    <div style="color: red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">error validation</div>
+
+
+    <br/>
+    <input type="submit" value="UPDATE !">
+
+</form>
+
+
+</body>
+</html>

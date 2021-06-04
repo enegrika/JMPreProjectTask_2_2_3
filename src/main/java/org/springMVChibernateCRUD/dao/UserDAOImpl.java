@@ -32,16 +32,25 @@ public class UserDAOImpl implements UserDAO {
 
     @Override
     public void addUser(User user) {
-        sessionFactory.getCurrentSession().save(user);
+        sessionFactory.getCurrentSession().persist(user);
+//        sessionFactory.getCurrentSession().save(user);
     }
 
     @Override
-    public void update(Long id, User user) {
-
+    public void updateUser(Long id, User userToUpdate) {
+        TypedQuery<User> query = sessionFactory.getCurrentSession()
+                .createQuery("UPDATE User SET name=?1, email=?2 WHERE id=?3");
+        query.setParameter(1, userToUpdate.getName());
+        query.setParameter(2, userToUpdate.getEmail());
+        query.setParameter(3, id);
+        query.executeUpdate();
     }
 
     @Override
-    public void delete(Long id) {
-
+    public void deleteUser(Long id) {
+        TypedQuery<User> query = sessionFactory.getCurrentSession()
+                .createQuery("DELETE FROM User WHERE id=?1");
+        query.setParameter(1, id);
+        query.executeUpdate();
     }
 }

@@ -14,7 +14,7 @@
 <body>
 <div>
     <br/>
-    USER
+    <h4>USER</h4>
     <hr/>
 
 </div>
@@ -26,13 +26,35 @@
 ' , email = ' + ${userById.getEmail()}">
 </div>
 
+<br/>
+<hr/>
 
-<!--USER DELETE BUTTON block-->
+<!--USER EDIT BUTTON block-->
 <div>
+    <form th:action="@{/users/{id}/editUser(id=${userById.getId()})}">
+        <input type="submit" value="EDIT USER">
+    </form>
+
+</div>
+
+<br/>
+
+<div>
+    <!--USER DELETE BUTTON block-->
+    <!--WE CAN NOT SEND DELETE REQUEST with"A" tag - should use FORM tag !!!-->
+    <!--    ALSO NEED TO put hiddenHttpMethodFilter to AppInit-->
     <form th:method="DELETE" th:action="@{/users/{id}(id=${userById.getId()})}">
         <input type="submit" value="DELETE">
     </form>
+</div>
 
+<br/>
+
+<div>
+    <!--BACK to THE LIST BUTTON-->
+    <form th:action="@{/users}">
+        <input type="submit" value="BACK to the LIST">
+    </form>
 </div>
 
 </body>

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 
 @Controller
-//@RequestMapping(value = "/users")
+@RequestMapping(value = "/users")
 public class UserController {
 
     private UserService userService;
@@ -25,61 +25,72 @@ public class UserController {
         this.userService = userService;
     }
 
-    // GET ALL USERS LIST
-    @GetMapping(value = "/users")
-    public String getListUsers(Model model) {
-        model.addAttribute("userList", userService.getListUsers());
-        return "/users/userList";
-    }
+//CREATE ("GET" - get info from server and "POST" - send info to server)
 
-    //GET USER by ID
-    @GetMapping(value = "/users/{id}")
-    public String getUser(@PathVariable(name = "id") Long id, Model model) {
-        model.addAttribute("userById", userService.getUser(id));
-        return "/users/showUser";
-    }
-
-    // ADD USER 2 methods - GET to OPEN FORM for adding new user
-    @GetMapping("/users/newUser")
+    // GET Request page to create NEW USER
+    // OPEN FORM for adding new user
+    @GetMapping("/newUser")
     public String addUser(@ModelAttribute("newUse") User user) {
         return "/users/newUser";
     }
 
-    @PostMapping(value = "/users")
+    // POST NEW USER to LIST and redirect back to the whole list page
+    @PostMapping
     public String createNewUser(@ModelAttribute("newUser") @Valid User user,
                                 BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             return "/users/newUser";
         }
         userService.addUser(user);
-        return "redirect:/users/";
+        return "redirect:/users";
     }
 
+//READ (GET)
 
-    //TODO deleteUser
-    @DeleteMapping(value = "users/{id}")
+    // GET ALL USERS LIST
+    @GetMapping
+    public String getListUsers(Model model) {
+        model.addAttribute("userList", userService.getListUsers());
+        return "/users/userList";
+    }
+
+    //GET one USER by ID
+    @GetMapping(value = "/{id}")
+    public String getUser(@PathVariable(name = "id") Long id, Model model) {
+        model.addAttribute("userById", userService.getUser(id));
+        return "/users/showUser";
+    }
+
+//UPDATE    (GET and POST)
+
+    //TODO updateUser
+
+
+    @GetMapping(value = "/{id}/editUser")
+    public String editUserRequest(@PathVariable("id") long id, Model model) {
+        model.addAttribute("userById", userService.getUser(id));
+        return "/users/editUser";
+    }
+
+    @PatchMapping("/{id}")
+    public String updateUser(@ModelAttribute("userById") @Valid User user,
+                             BindingResult bindingResult,
+                             @PathVariable("id") long id,
+                             Model model) {
+        if (bindingResult.hasErrors()) {
+            return "/users/editUser";
+        }
+        userService.updateUser(id, user);
+        return "redirect:/users";
+    }
+
+//DELETE  (POST)
+    @DeleteMapping(value = "/{id}")
     public String deleteUser(@ModelAttribute("userById") User user,
-                             @PathVariable("id") long id, Model model) {
-//        model.addAttribute("userToDelete",user);
-        userService.delete(id);
-        return "redirect:/users/userList";
+                             @PathVariable("id") Long id,
+                             Model model) {
+        userService.deleteUser(id);
+        return "redirect:/users";
     }
-
-
-
-
-
-
-    // WELCOME PAGE
-    @Value("${msg.title}")
-    private String titleString;
-
-    @GetMapping(value = {"/index", "/"})
-    public String index(Model model) {
-        model.addAttribute("title", titleString);
-
-        return "users/index";
-    }
-
 
 }
