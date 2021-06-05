@@ -39,6 +39,7 @@ public class AppConfigDatabase {
     }
 
     // PROPERTIES for Hibernate config from classpath properties file
+
     private  Properties getHibernateProps() {
         Properties props = new Properties();
         props.put("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));
@@ -123,6 +124,4 @@ public class AppConfigDatabase {
         transactionManager.setEntityManagerFactory(emf);
         return transactionManager;
     }
-
-
 }
