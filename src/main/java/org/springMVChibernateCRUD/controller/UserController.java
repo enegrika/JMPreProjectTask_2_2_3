@@ -63,9 +63,6 @@ public class UserController {
 
 //UPDATE    (GET and POST)
 
-    //TODO updateUser
-
-
     @GetMapping(value = "/{id}/editUser")
     public String editUserRequest(@PathVariable("id") long id, Model model) {
         model.addAttribute("userById", userService.getUser(id));
