@@ -3,6 +3,7 @@ package org.springMVChibernateCRUD.service;
 import org.springMVChibernateCRUD.dao.UserDAO;
 import org.springMVChibernateCRUD.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -12,7 +13,9 @@ import java.util.List;
 @Transactional
 public class UserServiceImp implements UserService {
 
+    // SET WHICH Persistence we will use
     @Autowired
+    @Qualifier(value = "UserDaoJpaImp")
     private UserDAO userDAO;
 
 //    @Autowired

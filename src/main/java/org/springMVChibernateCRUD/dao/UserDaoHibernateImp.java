@@ -9,8 +9,8 @@ import javax.persistence.TypedQuery;
 import java.util.ArrayList;
 import java.util.List;
 
-@Repository
-public class UserDAOImpl implements UserDAO {
+@Repository (value = "UserDaoHibernateImp")
+public class UserDaoHibernateImp implements UserDAO {
 
     // DATABASE CONNECTION
 
@@ -19,7 +19,8 @@ public class UserDAOImpl implements UserDAO {
 
     @Override
     public List<User> getListUsers() {
-        TypedQuery<User> query = sessionFactory.getCurrentSession().createQuery("from User u ORDER BY u.id");
+        TypedQuery<User> query = sessionFactory.getCurrentSession()
+                .createQuery("from User u ORDER BY u.id");
         return query.getResultList();
     }
 
