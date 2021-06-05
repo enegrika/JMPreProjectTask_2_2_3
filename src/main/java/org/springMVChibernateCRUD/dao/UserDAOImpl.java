@@ -19,7 +19,7 @@ public class UserDAOImpl implements UserDAO {
 
     @Override
     public List<User> getListUsers() {
-        TypedQuery<User> query = sessionFactory.getCurrentSession().createQuery("from User");
+        TypedQuery<User> query = sessionFactory.getCurrentSession().createQuery("from User u ORDER BY u.id");
         return query.getResultList();
     }
 
