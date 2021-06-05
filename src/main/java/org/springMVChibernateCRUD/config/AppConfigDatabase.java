@@ -2,6 +2,7 @@ package org.springMVChibernateCRUD.config;
 
 import org.springMVChibernateCRUD.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -10,8 +11,13 @@ import org.springframework.core.env.Environment;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
+import org.springframework.orm.jpa.JpaTransactionManager;
+import org.springframework.orm.jpa.JpaVendorAdapter;
+import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
+import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 import java.util.Properties;
 
@@ -21,7 +27,7 @@ import java.util.Properties;
 @ComponentScan(value = "org.springMVChibernateCRUD")
 public class AppConfigDatabase {
 
-    // to get properties from file we use Environment object from Spring
+    // inject Environment object to get settings from classpath properties file
     private Environment env;
 
     @Autowired
@@ -29,17 +35,18 @@ public class AppConfigDatabase {
         this.env = env;
     }
 
-    public AppConfigDatabase(){}
-    // get properties from classpath file
+    public AppConfigDatabase() {
+    }
 
-//    private Properties getHibernateProps() {
-//        Properties props = new Properties();
-//        props.put("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));
-//        props.put("hibernate.show_sql", env.getProperty("hibernate.show_sql"));
-//        return props;
-//    }
+    // PROPERTIES for Hibernate config from classpath properties file
+    private final Properties getHibernateProps() {
+        Properties props = new Properties();
+        props.put("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));
+        props.put("hibernate.show_sql", env.getProperty("hibernate.show_sql"));
+        return props;
+    }
 
-    // get JDBC DATABASE HERE
+    // DATASOURCE - SAME FOR ANY IMPLEMENTATION
     @Bean
     public DataSource getDataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
@@ -50,17 +57,16 @@ public class AppConfigDatabase {
         return dataSource;
     }
 
+    //___________________________HIBERNATE IMPLEMENTATION_____________________________________________________________//
+
+
+    // Hibernate LOCALSESSIONFACTORYBEAN - HIBERNATE data CONTEXT - but better use JPA
     // inject database and create session with spring orm hibernate 5
     @Bean
     public LocalSessionFactoryBean getSessionFactory() {
         LocalSessionFactoryBean factoryBean = new LocalSessionFactoryBean();
         factoryBean.setDataSource(getDataSource());
-
-        Properties props = new Properties();
-        props.put("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));
-        props.put("hibernate.show_sql", env.getProperty("hibernate.show_sql"));
-
-        factoryBean.setHibernateProperties(props);
+        factoryBean.setHibernateProperties(getHibernateProps());
         factoryBean.setAnnotatedClasses(User.class);
         return factoryBean;
     }
@@ -75,6 +81,40 @@ public class AppConfigDatabase {
     public HibernateTransactionManager getTransactionManager() {
         HibernateTransactionManager transactionManager = new HibernateTransactionManager();
         transactionManager.setSessionFactory(getSessionFactory().getObject());
+        return transactionManager;
+    }
+
+    //_______________________ JPA EntityManager IMPLEMENTATION_________________________________________________________//
+
+    //1 - create Hibernate JPA Adapter
+    @Bean
+    public JpaVendorAdapter getHibernateAdapter() {
+        return new HibernateJpaVendorAdapter();
+    }
+
+    // 2 - replace Hibernate "native" SessionFactory with EntityManagerContainer
+
+    @Bean
+    @Qualifier("getEMF")
+    public LocalContainerEntityManagerFactoryBean getEMF() {
+        LocalContainerEntityManagerFactoryBean emf = new LocalContainerEntityManagerFactoryBean();
+        emf.setDataSource(getDataSource());
+        emf.setPackagesToScan("org.springMVChibernateCRUD");
+
+        //TODO persistence unit
+
+        emf.setPersistenceUnitName();
+        emf.setJpaVendorAdapter(getHibernateAdapter());
+        emf.setJpaProperties(getHibernateProps());
+        return emf;
+    }
+
+    // 3 - new transaction manager
+    @Bean
+    @Autowired
+    public JpaTransactionManager getJpaTransactionManger(@Qualifier("getEMF") EntityManagerFactory emf) {
+        JpaTransactionManager transactionManager = new JpaTransactionManager();
+        transactionManager.setEntityManagerFactory(emf);
         return transactionManager;
     }
 
