@@ -3,6 +3,7 @@ package org.springMVChibernateCRUD.dao;
 import org.hibernate.SessionFactory;
 import org.springMVChibernateCRUD.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.TypedQuery;
@@ -15,6 +16,7 @@ public class UserDaoHibernateImp implements UserDAO {
     // DATABASE CONNECTION
 
     @Autowired
+    @Qualifier(value = "getSessionFactory")
     private SessionFactory sessionFactory;
 
     @Override

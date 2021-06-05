@@ -16,6 +16,7 @@ public class UserServiceImp implements UserService {
     // SET WHICH Persistence we will use
     @Autowired
     @Qualifier(value = "UserDaoJpaImp")
+//    @Qualifier(value = "UserDaoHibernateImp")
     private UserDAO userDAO;
 
 //    @Autowired

@@ -1,5 +1,6 @@
 package org.springMVChibernateCRUD.config;
 
+import org.hibernate.jpa.HibernatePersistenceProvider;
 import org.springMVChibernateCRUD.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -29,7 +30,6 @@ public class AppConfigDatabase {
 
     // inject Environment object to get settings from classpath properties file
     private Environment env;
-
     @Autowired
     public AppConfigDatabase(Environment env) {
         this.env = env;
@@ -39,7 +39,7 @@ public class AppConfigDatabase {
     }
 
     // PROPERTIES for Hibernate config from classpath properties file
-    private final Properties getHibernateProps() {
+    private  Properties getHibernateProps() {
         Properties props = new Properties();
         props.put("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));
         props.put("hibernate.show_sql", env.getProperty("hibernate.show_sql"));
@@ -63,6 +63,7 @@ public class AppConfigDatabase {
     // Hibernate LOCALSESSIONFACTORYBEAN - HIBERNATE data CONTEXT - but better use JPA
     // inject database and create session with spring orm hibernate 5
     @Bean
+    @Qualifier(value = "getSessionFactory")
     public LocalSessionFactoryBean getSessionFactory() {
         LocalSessionFactoryBean factoryBean = new LocalSessionFactoryBean();
         factoryBean.setDataSource(getDataSource());
@@ -77,41 +78,46 @@ public class AppConfigDatabase {
     // This transaction manager is appropriate for applications
     // that use a single Hibernate SessionFactory for transactional data access,
     // but it also supports direct DataSource access within a transaction i.e. plain JDBC.
-    @Bean
-    public HibernateTransactionManager getTransactionManager() {
-        HibernateTransactionManager transactionManager = new HibernateTransactionManager();
-        transactionManager.setSessionFactory(getSessionFactory().getObject());
-        return transactionManager;
-    }
+
+    //TODO how to keep 2 TRANSACTION MANAGERS???
+
+
+//    @Bean(name = "HibernateTransactionManager")
+//    public HibernateTransactionManager getTransactionManager() {
+//        HibernateTransactionManager transactionManager = new HibernateTransactionManager();
+//        transactionManager.setSessionFactory(getSessionFactory().getObject());
+//        return transactionManager;
+//    }
 
     //_______________________ JPA EntityManager IMPLEMENTATION_________________________________________________________//
 
-    //1 - create Hibernate JPA Adapter
+    //1 - create Hibernate for JPA Adapter
     @Bean
     public JpaVendorAdapter getHibernateAdapter() {
         return new HibernateJpaVendorAdapter();
     }
 
-    // 2 - replace Hibernate "native" SessionFactory with EntityManagerContainer
+    // 2 - replace Hibernate "native" SessionFactory with JPA EntityManagerFactory
 
-    @Bean
-    @Qualifier("getEMF")
+    @Bean(name = "getEMF")
     public LocalContainerEntityManagerFactoryBean getEMF() {
         LocalContainerEntityManagerFactoryBean emf = new LocalContainerEntityManagerFactoryBean();
         emf.setDataSource(getDataSource());
-        emf.setPackagesToScan("org.springMVChibernateCRUD");
 
         //TODO persistence unit
 
-        emf.setPersistenceUnitName();
+        emf.setPackagesToScan(new String[]{"org.springMVChibernateCRUD"});
+        emf.setPersistenceProviderClass(HibernatePersistenceProvider.class);
+
+
+//        emf.setPersistenceUnitName();
         emf.setJpaVendorAdapter(getHibernateAdapter());
         emf.setJpaProperties(getHibernateProps());
         return emf;
     }
 
-    // 3 - new transaction manager
-    @Bean
-    @Autowired
+    // 3 - JPA transaction manager
+    @Bean(name = "JpaTransactionManger")
     public JpaTransactionManager getJpaTransactionManger(@Qualifier("getEMF") EntityManagerFactory emf) {
         JpaTransactionManager transactionManager = new JpaTransactionManager();
         transactionManager.setEntityManagerFactory(emf);

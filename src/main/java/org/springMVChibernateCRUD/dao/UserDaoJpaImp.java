@@ -2,6 +2,7 @@ package org.springMVChibernateCRUD.dao;
 
 import org.springMVChibernateCRUD.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
@@ -15,9 +16,10 @@ import java.util.List;
 @Repository(value = "UserDaoJpaImp")
 public class UserDaoJpaImp implements UserDAO {
 
+
     @PersistenceContext(unitName = "getEMF")
-//    @Autowired
     private EntityManager entityManager;
+
 
     // Using Java Persistence Query Language (JPQL)
 //    ______________________________________________________
@@ -40,6 +42,11 @@ public class UserDaoJpaImp implements UserDAO {
     public void addUser(User user) {
         entityManager.persist(user);
     }
+
+
+
+    //TODO update and delete queries
+
 
     @Override
     public void updateUser(Long id, User user) {
