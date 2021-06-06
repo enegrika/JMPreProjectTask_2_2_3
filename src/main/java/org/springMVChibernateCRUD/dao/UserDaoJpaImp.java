@@ -49,13 +49,7 @@ public class UserDaoJpaImp implements UserDAO {
 
     @Override
     public void deleteUser(Long id) {
-        TypedQuery<User> query = entityManager.createQuery(
-                "DELETE FROM User WHERE id=?1", User.class
-        );
-        query.setParameter(1, id);
-        query.executeUpdate();
-
-//        entityManager.remove();
-
+        User u = entityManager.find(User.class, id);
+        entityManager.remove(u);
     }
 }

@@ -10,31 +10,35 @@
 
     <title>UPDATE FORM</title>
 
-
 </head>
 
 <body>
-<hr/>
 <br/>
-<form th:method="PATCH" th:action="@{/users/{id}(id=${userById.getId()})}" th:object="${userById}">
 
-    <br/>
-    <label for="name">Edit name:</label>
-    <input type="text" th:field="*{name}" id="name">
-    <div style="color: red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">error validation</div>
+<div>
+    <h5 th:utext="'User ID : ' + ${userById.getId()}">user id</h5>
+</div>
+<hr/>
+<div>
+    <form th:method="PATCH" th:action="@{/users/{id}(id=${userById.getId()})}" th:object="${userById}">
 
+        <label for="name">Edit name:</label>
+        <input type="text" th:field="*{name}" id="name">
+        <div style="color: red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">error validation</div>
 
-    <br/>
-    <label for="email">Edit name:</label>
-    <input type="text" th:field="*{email}" id="email">
-    <div style="color: red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">error validation</div>
+        <br/>
+        <label for="email">Edit name:</label>
+        <input type="text" th:field="*{email}" id="email">
+        <div style="color: red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">error validation</div>
 
+        <br/>
+        <hr/>
+        <input type="submit" value="UPDATE !">
 
-    <br/>
-    <input type="submit" value="UPDATE !">
+    </form>
+</div>
 
-</form>
-
+<br/>
 
 </body>
 </html>
