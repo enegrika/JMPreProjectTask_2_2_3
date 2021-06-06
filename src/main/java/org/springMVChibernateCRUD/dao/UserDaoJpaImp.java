@@ -39,20 +39,12 @@ public class UserDaoJpaImp implements UserDAO {
     }
 
 
-
-    //TODO update and delete queries
-
     @Override
     public void updateUser(Long id, User user) {
-        TypedQuery<User> query = entityManager.createQuery(
-                "UPDATE User SET name=?1, email=?2 WHERE id=?3", User.class
-        );
-        query.setParameter(1, user.getName());
-        query.setParameter(2, user.getEmail());
-        query.setParameter(3, id);
-        query.executeUpdate();
-
-//        entityManager.merge(user);
+        User u = entityManager.find(User.class, id);
+        u.setName(user.getName());
+        u.setEmail(user.getEmail());
+        entityManager.persist(u);
     }
 
     @Override
