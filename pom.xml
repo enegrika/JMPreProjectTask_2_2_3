@@ -10,17 +10,14 @@
 
     <packaging>war</packaging>
 
-    <!--    <name>springMVC_hibernate_CRUD Maven Webapp</name>-->
-    <!--    <url>http://www.example.com</url>-->
 
     <properties>
         <!--        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
-        <!--        <maven.compiler.source>1.8</maven.compiler.source>-->
-        <!--        <maven.compiler.target>1.8</maven.compiler.target>-->
-
         <!--        <failOnMissingWebXml>false</failOnMissingWebXml>-->
 
         <spring.version>5.2.15.RELEASE</spring.version>
+        <jcl.slf4j.version>1.7.30</jcl.slf4j.version>
+        <logback.version>1.2.3</logback.version>
 
     </properties>
 
@@ -28,7 +25,6 @@
 
         <!--    /////// DEPENDENCIES FOR SERVLET-->
 
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
@@ -67,13 +63,6 @@
             <version>5.4.31.Final</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
-        <!--        <dependency>-->
-        <!--            <groupId>org.hibernate</groupId>-->
-        <!--            <artifactId>hibernate-entitymanager</artifactId>-->
-        <!--            <version>5.4.32.Final</version>-->
-        <!--        </dependency>-->
-
 
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
         <dependency>
@@ -96,7 +85,7 @@
             <version>2.5.1</version>
         </dependency>
 
-
+<!--//// DATABASES DRIVERS-->
         <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
         <dependency>
             <groupId>org.postgresql</groupId>
@@ -111,23 +100,29 @@
             <version>8.0.25</version>
         </dependency>
 
-        <!-- log4j2 -->
-        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+        <!-- LOGGING -->
+
+        <!-- 2. Bridge logging from JCL to SLF4j-->
         <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-core</artifactId>
-            <version>2.14.1</version>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>${jcl.slf4j.version}</version>
         </dependency>
 
-
-        <!-- SLF4J Bridge -->
-        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl -->
         <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-slf4j-impl</artifactId>
-            <version>2.14.1</version>
-            <scope>test</scope>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
         </dependency>
+
+<!--        // add ANSI COLORS for windows impl-->
+        <!-- https://mvnrepository.com/artifact/org.fusesource.jansi/jansi -->
+        <dependency>
+            <groupId>org.fusesource.jansi</groupId>
+            <artifactId>jansi</artifactId>
+            <version>2.3.3</version>
+        </dependency>
+
 
 
         <!--    TESTING DEPENDENCIES-->
@@ -159,10 +154,7 @@
                     <configuration>
                         <source>1.8</source>
                         <target>1.8</target>
-
                     </configuration>
-
-
                 </plugin>
                 <plugin>
                     <artifactId>maven-surefire-plugin</artifactId>

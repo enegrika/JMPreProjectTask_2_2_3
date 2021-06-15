@@ -10,14 +10,15 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service
+//@Transactional(value = "JpaTransactionManager")
+//@Transactional(value = "HibernateTransactionManager")
 @Transactional
 public class UserServiceImp implements UserService {
 
-    // SET WHICH Persistence we will use
+    // SET WHICH Persistence context implementation we will use
     @Autowired
     @Qualifier(value = "UserDaoJpaImp")
 //    @Qualifier(value = "UserDaoHibernateImp")
-
     private UserDAO userDAO;
 
 //    @Autowired

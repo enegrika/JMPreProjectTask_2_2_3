@@ -1,0 +1,59 @@
+2021-06-15 21:26:14 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwelcome page started
+[0;39m2021-06-15 21:26:14 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwelcome() is executed, value sergei
+[0;39m2021-06-15 21:26:14 [39mTRACE[0;39m [36mo.s.c.WelcomeController[0;39m - [32mtrace log test
+[0;39m2021-06-15 21:26:14 [39mDEBUG[0;39m [36mo.s.c.WelcomeController[0;39m - [32mdebug level log test
+[0;39m2021-06-15 21:26:14 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32minfo level log test
+[0;39m2021-06-15 21:26:14 [31mWARN [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwarning log test
+[0;39m2021-06-15 21:26:14 [1;31mERROR[0;39m [36mo.s.c.WelcomeController[0;39m - [32mThis is TEST !!!!! Error message
+[0;39m2021-06-15 21:26:14 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwelcome page ended
+[0;39m2021-06-15 21:26:24 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get all users list - started
+[0;39m2021-06-15 21:26:24 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get all users list - ended
+[0;39m2021-06-15 21:26:26 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get userById  - started
+[0;39m2021-06-15 21:26:26 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get userById - ended
+[0;39m2021-06-15 21:26:28 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to GET EDIT userById - started
+[0;39m2021-06-15 21:26:28 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to GET EDIT userById - ended
+[0;39m2021-06-15 21:26:29 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to PATCH(UPDATE) userById - started
+[0;39m2021-06-15 21:26:29 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to PATCH (UPDATE) userById - ended
+[0;39m2021-06-15 21:26:29 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get all users list - started
+[0;39m2021-06-15 21:26:29 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get all users list - ended
+[0;39m2021-06-15 21:26:31 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController addUser() start "GET" mapping
+[0;39m2021-06-15 21:26:32 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController createNewUser - started
+[0;39m2021-06-15 21:26:32 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController created newUser() - ended
+[0;39m2021-06-15 21:26:32 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get all users list - started
+[0;39m2021-06-15 21:26:32 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get all users list - ended
+[0;39m2021-06-15 21:26:33 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwelcome page started
+[0;39m2021-06-15 21:26:33 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwelcome() is executed, value sergei
+[0;39m2021-06-15 21:26:33 [39mTRACE[0;39m [36mo.s.c.WelcomeController[0;39m - [32mtrace log test
+[0;39m2021-06-15 21:26:33 [39mDEBUG[0;39m [36mo.s.c.WelcomeController[0;39m - [32mdebug level log test
+[0;39m2021-06-15 21:26:33 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32minfo level log test
+[0;39m2021-06-15 21:26:33 [31mWARN [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwarning log test
+[0;39m2021-06-15 21:26:33 [1;31mERROR[0;39m [36mo.s.c.WelcomeController[0;39m - [32mThis is TEST !!!!! Error message
+[0;39m2021-06-15 21:26:33 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwelcome page ended
+[0;39m2021-06-15 21:26:35 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get all users list - started
+[0;39m2021-06-15 21:26:35 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get all users list - ended
+[0;39m2021-06-15 21:26:37 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get userById  - started
+[0;39m2021-06-15 21:26:37 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get userById - ended
+[0;39m2021-06-15 21:26:38 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController DELETE userById - started
+[0;39m2021-06-15 21:26:38 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController DELETE userById - ended
+[0;39m2021-06-15 21:26:38 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get all users list - started
+[0;39m2021-06-15 21:26:38 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get all users list - ended
+[0;39m2021-06-15 21:26:39 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwelcome page started
+[0;39m2021-06-15 21:26:39 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwelcome() is executed, value sergei
+[0;39m2021-06-15 21:26:39 [39mTRACE[0;39m [36mo.s.c.WelcomeController[0;39m - [32mtrace log test
+[0;39m2021-06-15 21:26:39 [39mDEBUG[0;39m [36mo.s.c.WelcomeController[0;39m - [32mdebug level log test
+[0;39m2021-06-15 21:26:39 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32minfo level log test
+[0;39m2021-06-15 21:26:39 [31mWARN [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwarning log test
+[0;39m2021-06-15 21:26:39 [1;31mERROR[0;39m [36mo.s.c.WelcomeController[0;39m - [32mThis is TEST !!!!! Error message
+[0;39m2021-06-15 21:26:39 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwelcome page ended
+[0;39m#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss} %highlight(%-5level) %cyan(%logger{15}) - %green(%msg%n)
+#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss} %highlight(%-5level) %cyan(%logger{15}) - %green(%msg%n)
+#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss} %highlight(%-5level) %cyan(%logger{15}) - %green(%msg%n)
+2021-06-15 21:28:55 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwelcome page started
+[0;39m2021-06-15 21:28:55 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwelcome() is executed, value sergei
+[0;39m2021-06-15 21:28:55 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32minfo level log test
+[0;39m2021-06-15 21:28:55 [31mWARN [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwarning log test
+[0;39m2021-06-15 21:28:55 [1;31mERROR[0;39m [36mo.s.c.WelcomeController[0;39m - [32mThis is TEST !!!!! Error message
+[0;39m2021-06-15 21:28:55 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwelcome page ended
+[0;39m2021-06-15 21:28:57 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get all users list - started
+[0;39m2021-06-15 21:28:58 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get all users list - ended
+[0;39m

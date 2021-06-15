@@ -38,7 +38,7 @@ public class AppConfigDatabase {
     public AppConfigDatabase() {
     }
 
-    // PROPERTIES for Hibernate config from classpath properties file
+    // PROPERTIES for Hibernate config from classpath properties file - SAME for ANY IMPLEMENT
 
     private  Properties getHibernateProps() {
         Properties props = new Properties();
@@ -73,26 +73,21 @@ public class AppConfigDatabase {
         return factoryBean;
     }
 
-    // binds hibernate session from factory to th thread,
-    // binds a Hibernate Session from the specified factory to the thread,
-    // potentially allowing for one thread-bound Session per factory.
-    // This transaction manager is appropriate for applications
-    // that use a single Hibernate SessionFactory for transactional data access,
-    // but it also supports direct DataSource access within a transaction i.e. plain JDBC.
+    // TRANSACTION MANAGER Hibernate DataSource access within a transaction i.e. plain JDBC.
 
     //TODO how to keep 2 TRANSACTION MANAGERS???
 
 
-//    @Bean(name = "HibernateTransactionManager")
+//    @Bean(value = "HibernateTransactionManager")
 //    public HibernateTransactionManager getTransactionManager() {
-//        HibernateTransactionManager transactionManager = new HibernateTransactionManager();
-//        transactionManager.setSessionFactory(getSessionFactory().getObject());
-//        return transactionManager;
+//        HibernateTransactionManager hibernateTransactionManager = new HibernateTransactionManager();
+//        hibernateTransactionManager.setSessionFactory(getSessionFactory().getObject());
+//        return hibernateTransactionManager;
 //    }
 
     //_______________________ JPA EntityManager IMPLEMENTATION_________________________________________________________//
 
-    //1 - create Hibernate for JPA Adapter
+    //1 - create Hibernate for JPA Adapter для обслуживания менеджера транзакций
     @Bean
     public JpaVendorAdapter getHibernateAdapter() {
         return new HibernateJpaVendorAdapter();
@@ -108,8 +103,7 @@ public class AppConfigDatabase {
         //TODO persistence unit
 
         emf.setPackagesToScan(new String[]{"org.springMVChibernateCRUD"});
-        emf.setPersistenceProviderClass(HibernatePersistenceProvider.class);
-
+//        emf.setPersistenceProviderClass(HibernatePersistenceProvider.class);
 
 //        emf.setPersistenceUnitName();
         emf.setJpaVendorAdapter(getHibernateAdapter());
@@ -118,10 +112,10 @@ public class AppConfigDatabase {
     }
 
     // 3 - JPA transaction manager
-    @Bean(name = "JpaTransactionManger")
+    @Bean(name = "JpaTransactionManager")
     public JpaTransactionManager getJpaTransactionManger(@Qualifier("getEMF") EntityManagerFactory emf) {
-        JpaTransactionManager transactionManager = new JpaTransactionManager();
-        transactionManager.setEntityManagerFactory(emf);
-        return transactionManager;
+        JpaTransactionManager jpaTransactionManager = new JpaTransactionManager();
+        jpaTransactionManager.setEntityManagerFactory(emf);
+        return jpaTransactionManager;
     }
 }

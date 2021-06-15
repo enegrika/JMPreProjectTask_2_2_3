@@ -3,6 +3,7 @@ package org.springMVChibernateCRUD.model;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Objects;
 
 @Entity
 @Table(name = "users")
@@ -26,7 +27,6 @@ public class User {
         this.name = name;
         this.email = email;
     }
-
 
 
     public Long getId() {
@@ -53,18 +53,28 @@ public class User {
         this.email = email;
     }
 
-//    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (o == null || getClass() != o.getClass()) return false;
-//        User user = (User) o;
-//        return id.equals(user.id) && Objects.equals(name, user.name) && Objects.equals(email, user.email);
-//    }
-//
-//    @Override
-//    public int hashCode() {
-//        return Objects.hash(id, name, email);
-//    }
+    @Override
+    public int hashCode() {
+
+        //Effective Java
+        int result = 17;
+        result = 31 * result + (int) (this.getId().longValue() ^ (this.getId().longValue() >>> 32));
+        return this.getId() != null ? result : 0;
+
+        //jdk 7 and above
+//        return Objects.hash(this.getId());
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof User)) return false;
+
+        User user = (User) o;
+
+        return getId() != null ? getId().equals(user.getId()) : user.getId() == null;
+    }
+
 
     @Override
     public String toString() {

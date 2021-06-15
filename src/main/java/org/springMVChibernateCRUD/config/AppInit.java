@@ -10,7 +10,6 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import java.util.EnumSet;
 
-//@Configuration
 public class AppInit extends AbstractAnnotationConfigDispatcherServletInitializer {
 
     @Override

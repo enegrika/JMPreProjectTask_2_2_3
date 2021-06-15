@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property name="HOME_LOG"
+              value="C:/Users/serge/IdeaProjects/JavaMentorPreProject/JMPreProjectTask_2_2_3/src/logs/logback.log"/>
+    <!-- On Windows machines setting withJansi to true enables ANSI
+            color code interpretation by the Jansi library. This requires
+            org.fusesource.jansi:jansi:1.8 on the class path.  Note that
+            Unix-based operating systems such as Linux and Mac OS X
+            support ANSI color codes by default. -->
+
+    <withJansi>true</withJansi>
+
+    <appender name="FILE-ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
+
+        <file>${HOME_LOG}</file>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>Logs/logback.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy
+                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+
+                <!-- each archived file, size max 10MB -->
+                <maxFileSize>10MB</maxFileSize>
+
+            </timeBasedFileNamingAndTriggeringPolicy>
+
+            <!-- total size of all archive files, if total size > 20GB, it will delete old archived file -->
+            <totalSizeCap>20GB</totalSizeCap>
+
+            <!-- 07 days to keep -->
+            <maxHistory>7</maxHistory>
+        </rollingPolicy>
+
+        <!--        view pattern-->
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %highlight(%-5level) %cyan(%logger{15}) - %green(%msg%n)</pattern>
+            <outputPatternAsHeader>true</outputPatternAsHeader>
+        </encoder>
+    </appender>
+
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>
+                %d{yyyy-MM-dd HH:mm:ss} %highlight(%-5level) %cyan(%logger{15}) - %green(%msg%n)
+            </Pattern>
+        </layout>
+    </appender>
+
+    <!--    Logs Asynchronously - make logging faster.-->
+    <appender name="ASYNC" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="FILE-ROLLING"/>
+    </appender>
+
+<!--    DIFFERENT LOGGERS-->
+
+    <logger name="org.springframework" level="debug" additivity="false">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+
+    <logger name="org.springMVChibernateCRUD" level="debug" additivity="false">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+
+    <logger name="org.springMVChibernateCRUD" level="info" additivity="false">
+        <appender-ref ref="ASYNC"/>
+    </logger>
+
+    <root level="debug">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+</configuration>
