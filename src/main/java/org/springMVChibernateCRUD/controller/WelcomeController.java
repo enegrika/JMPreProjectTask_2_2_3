@@ -8,11 +8,15 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 @Controller
 @RequestMapping(value = {"/", "/index"})
 public class WelcomeController {
 
     private static final Logger logger = LoggerFactory.getLogger(WelcomeController.class);
+    private static LocalDateTime time;
 
     //     WELCOME PAGE
     @Value("${msg.title}")
@@ -21,11 +25,12 @@ public class WelcomeController {
     @GetMapping
     public String index(Model model) {
 
-        logger.info("welcome page started");
+        time = LocalDateTime.now();
+        logger.info("welcome page started at {}", time);
 
         model.addAttribute("title", titleString);
-
-        logger.info("welcome() is executed, value {}", "sergei");
+// send parameters to logger message with {} marks
+        logger.info("welcome() is executed, at time: {} with username : {}", time, "sergei");
 
         logger.trace("trace log test");
         logger.debug("debug level log test");

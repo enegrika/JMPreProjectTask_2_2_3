@@ -29,8 +29,9 @@ import java.util.Properties;
 public class AppConfigDatabase {
 
     // inject Environment object to get settings from classpath properties file
-    private Environment env;
     @Autowired
+    private Environment env;
+//    @Autowired
     public AppConfigDatabase(Environment env) {
         this.env = env;
     }
@@ -100,11 +101,8 @@ public class AppConfigDatabase {
         LocalContainerEntityManagerFactoryBean emf = new LocalContainerEntityManagerFactoryBean();
         emf.setDataSource(getDataSource());
 
-        //TODO persistence unit
-
         emf.setPackagesToScan(new String[]{"org.springMVChibernateCRUD"});
 //        emf.setPersistenceProviderClass(HibernatePersistenceProvider.class);
-
 //        emf.setPersistenceUnitName();
         emf.setJpaVendorAdapter(getHibernateAdapter());
         emf.setJpaProperties(getHibernateProps());

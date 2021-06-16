@@ -62,6 +62,12 @@
             <artifactId>hibernate-core</artifactId>
             <version>5.4.31.Final</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>7.0.1.Final</version>
+        </dependency>
 
 
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
@@ -101,8 +107,7 @@
         </dependency>
 
         <!-- LOGGING -->
-
-        <!-- 2. Bridge logging from JCL to SLF4j-->
+<!-- 2. Bridge logging from JavaCommonsLogg to SLF4j-->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>jcl-over-slf4j</artifactId>
@@ -116,7 +121,6 @@
         </dependency>
 
 <!--        // add ANSI COLORS for windows impl-->
-        <!-- https://mvnrepository.com/artifact/org.fusesource.jansi/jansi -->
         <dependency>
             <groupId>org.fusesource.jansi</groupId>
             <artifactId>jansi</artifactId>
