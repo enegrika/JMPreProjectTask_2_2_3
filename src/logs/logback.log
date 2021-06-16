@@ -56,4 +56,679 @@
 [0;39m2021-06-15 21:28:55 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwelcome page ended
 [0;39m2021-06-15 21:28:57 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get all users list - started
 [0;39m2021-06-15 21:28:58 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get all users list - ended
-[0;39m
+[0;39m#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss} %highlight(%-5level) %cyan(%logger{15}) - %green(%msg%n)
+2021-06-16 12:33:32 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwelcome page started
+[0;39m2021-06-16 12:33:32 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwelcome() is executed, value sergei
+[0;39m2021-06-16 12:33:32 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32minfo level log test
+[0;39m2021-06-16 12:33:32 [31mWARN [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwarning log test
+[0;39m2021-06-16 12:33:32 [1;31mERROR[0;39m [36mo.s.c.WelcomeController[0;39m - [32mThis is TEST !!!!! Error message
+[0;39m2021-06-16 12:33:32 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwelcome page ended
+[0;39m2021-06-16 12:33:36 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwelcome page started
+[0;39m2021-06-16 12:33:36 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwelcome() is executed, value sergei
+[0;39m2021-06-16 12:33:36 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32minfo level log test
+[0;39m2021-06-16 12:33:36 [31mWARN [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwarning log test
+[0;39m2021-06-16 12:33:36 [1;31mERROR[0;39m [36mo.s.c.WelcomeController[0;39m - [32mThis is TEST !!!!! Error message
+[0;39m2021-06-16 12:33:36 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwelcome page ended
+[0;39m2021-06-16 12:34:01 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get all users list - started
+[0;39m2021-06-16 12:34:01 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get all users list - ended
+[0;39m2021-06-16 12:34:03 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get userById  - started
+[0;39m2021-06-16 12:34:03 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get userById - ended
+[0;39m2021-06-16 12:34:08 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to GET EDIT userById - started
+[0;39m2021-06-16 12:34:08 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to GET EDIT userById - ended
+[0;39m2021-06-16 12:34:12 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to PATCH(UPDATE) userById - started
+[0;39m2021-06-16 12:34:12 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to PATCH (UPDATE) userById - ended
+[0;39m2021-06-16 12:34:12 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get all users list - started
+[0;39m2021-06-16 12:34:12 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get all users list - ended
+[0;39m2021-06-16 12:43:17 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwelcome page started
+[0;39m2021-06-16 12:43:17 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwelcome() is executed, value sergei
+[0;39m2021-06-16 12:43:17 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32minfo level log test
+[0;39m2021-06-16 12:43:17 [31mWARN [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwarning log test
+[0;39m2021-06-16 12:43:17 [1;31mERROR[0;39m [36mo.s.c.WelcomeController[0;39m - [32mThis is TEST !!!!! Error message
+[0;39m2021-06-16 12:43:17 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwelcome page ended
+[0;39m2021-06-16 12:43:19 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get all users list - started
+[0;39m2021-06-16 12:43:19 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get all users list - ended
+[0;39m2021-06-16 12:43:21 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController addUser() start "GET" mapping
+[0;39m2021-06-16 12:43:22 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController createNewUser - started
+[0;39m2021-06-16 12:43:22 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController created newUser() - ended
+[0;39m2021-06-16 12:43:22 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get all users list - started
+[0;39m2021-06-16 12:43:22 [34mINFO [0;39m [36mo.s.c.UserController[0;39m - [32mUserController try to get all users list - ended
+[0;39m2021-06-16 12:43:23 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwelcome page started
+[0;39m2021-06-16 12:43:23 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwelcome() is executed, value sergei
+[0;39m2021-06-16 12:43:23 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32minfo level log test
+[0;39m2021-06-16 12:43:23 [31mWARN [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwarning log test
+[0;39m2021-06-16 12:43:23 [1;31mERROR[0;39m [36mo.s.c.WelcomeController[0;39m - [32mThis is TEST !!!!! Error message
+[0;39m2021-06-16 12:43:23 [34mINFO [0;39m [36mo.s.c.WelcomeController[0;39m - [32mwelcome page ended
+[0;39m#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss} %-5level %logger{15} - %msg%n
+2021-06-16 12:48:06 INFO  o.s.c.WelcomeController - welcome page started
+2021-06-16 12:48:06 INFO  o.s.c.WelcomeController - welcome() is executed, value sergei
+2021-06-16 12:48:06 INFO  o.s.c.WelcomeController - info level log test
+2021-06-16 12:48:06 WARN  o.s.c.WelcomeController - warning log test
+2021-06-16 12:48:06 ERROR o.s.c.WelcomeController - This is TEST !!!!! Error message
+2021-06-16 12:48:06 INFO  o.s.c.WelcomeController - welcome page ended
+2021-06-16 12:48:23 INFO  o.s.c.UserController - UserController try to get all users list - started
+2021-06-16 12:48:23 INFO  o.s.c.UserController - UserController try to get all users list - started
+2021-06-16 12:48:23 INFO  o.s.c.UserController - UserController try to get all users list - ended
+2021-06-16 12:48:23 INFO  o.s.c.UserController - UserController try to get all users list - ended
+2021-06-16 12:48:38 INFO  o.s.c.WelcomeController - welcome page started
+2021-06-16 12:48:38 INFO  o.s.c.WelcomeController - welcome() is executed, value sergei
+2021-06-16 12:48:38 INFO  o.s.c.WelcomeController - info level log test
+2021-06-16 12:48:38 WARN  o.s.c.WelcomeController - warning log test
+2021-06-16 12:48:38 ERROR o.s.c.WelcomeController - This is TEST !!!!! Error message
+2021-06-16 12:48:38 INFO  o.s.c.WelcomeController - welcome page ended
+#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss} %-6level %logger{15} - %msg%n
+2021-06-16 12:49:35 INFO   o.s.c.WelcomeController - welcome page started
+2021-06-16 12:49:35 INFO   o.s.c.WelcomeController - welcome() is executed, value sergei
+2021-06-16 12:49:35 INFO   o.s.c.WelcomeController - info level log test
+2021-06-16 12:49:35 WARN   o.s.c.WelcomeController - warning log test
+2021-06-16 12:49:35 ERROR  o.s.c.WelcomeController - This is TEST !!!!! Error message
+2021-06-16 12:49:35 INFO   o.s.c.WelcomeController - welcome page ended
+#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss} %-6level %logger{15} - 'message :' %msg%n
+2021-06-16 12:50:10 INFO   o.s.c.WelcomeController - 'message :' welcome page started
+2021-06-16 12:50:10 INFO   o.s.c.WelcomeController - 'message :' welcome() is executed, value sergei
+2021-06-16 12:50:10 INFO   o.s.c.WelcomeController - 'message :' info level log test
+2021-06-16 12:50:10 WARN   o.s.c.WelcomeController - 'message :' warning log test
+2021-06-16 12:50:10 ERROR  o.s.c.WelcomeController - 'message :' This is TEST !!!!! Error message
+2021-06-16 12:50:10 INFO   o.s.c.WelcomeController - 'message :' welcome page ended
+#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss}  %-6level %logger{15} - %msg%n
+2021-06-16 12:50:56  INFO   o.s.c.WelcomeController - welcome page started
+2021-06-16 12:50:56  INFO   o.s.c.WelcomeController - welcome() is executed, value sergei
+2021-06-16 12:50:56  INFO   o.s.c.WelcomeController - info level log test
+2021-06-16 12:50:56  WARN   o.s.c.WelcomeController - warning log test
+2021-06-16 12:50:56  ERROR  o.s.c.WelcomeController - This is TEST !!!!! Error message
+2021-06-16 12:50:56  INFO   o.s.c.WelcomeController - welcome page ended
+2021-06-16 12:51:25  INFO   o.s.c.UserController - UserController try to get all users list - started
+2021-06-16 12:51:25  INFO   o.s.c.UserController - UserController try to get all users list - started
+2021-06-16 12:51:25  INFO   o.s.c.UserController - UserController try to get all users list - ended
+2021-06-16 12:51:25  INFO   o.s.c.UserController - UserController try to get all users list - ended
+#logback.classic pattern: %d{yyyy-MM-dd   HH:mm:ss}  %-6level %logger{30} - %msg%n
+2021-06-16   12:51:54  INFO   o.s.controller.UserController - UserController try to get all users list - started
+2021-06-16   12:51:55  INFO   o.s.controller.UserController - UserController try to get all users list - ended
+2021-06-16   12:52:01  INFO   o.s.c.WelcomeController - welcome page started
+2021-06-16   12:52:01  INFO   o.s.c.WelcomeController - welcome() is executed, value sergei
+2021-06-16   12:52:01  INFO   o.s.c.WelcomeController - info level log test
+2021-06-16   12:52:01  WARN   o.s.c.WelcomeController - warning log test
+2021-06-16   12:52:01  ERROR  o.s.c.WelcomeController - This is TEST !!!!! Error message
+2021-06-16   12:52:01  INFO   o.s.c.WelcomeController - welcome page ended
+2021-06-16   12:52:21  INFO   o.s.controller.UserController - UserController try to get all users list - started
+2021-06-16   12:52:21  INFO   o.s.controller.UserController - UserController try to get all users list - ended
+2021-06-16   12:52:48  INFO   o.s.controller.UserController - UserController try to get userById  - started
+2021-06-16   12:52:48  INFO   o.s.controller.UserController - UserController try to get userById - ended
+#logback.classic pattern: %d{yyyy-MM-dd  HH:mm:ss}  %-6level %logger{30} - %msg%n
+2021-06-16  12:56:09  INFO   o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+2021-06-16  12:56:09  DEBUG  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext
+2021-06-16  12:56:09  DEBUG  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering component classes: [class org.springMVChibernateCRUD.config.AppConfigDatabase]
+2021-06-16  12:56:09  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2021-06-16  12:56:09  DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/adminstudioa/IdeaProjects/JavaMentorTasks/JMPreProjectTask_2_2_3_JPA/target/springMVC_hibernate_CRUD-1.0-SNAPSHOT/WEB-INF/classes/org/springMVChibernateCRUD/config/WebViewContextConfig.class]
+2021-06-16  12:56:09  DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/adminstudioa/IdeaProjects/JavaMentorTasks/JMPreProjectTask_2_2_3_JPA/target/springMVC_hibernate_CRUD-1.0-SNAPSHOT/WEB-INF/classes/org/springMVChibernateCRUD/controller/UserController.class]
+2021-06-16  12:56:09  DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/adminstudioa/IdeaProjects/JavaMentorTasks/JMPreProjectTask_2_2_3_JPA/target/springMVC_hibernate_CRUD-1.0-SNAPSHOT/WEB-INF/classes/org/springMVChibernateCRUD/controller/WelcomeController.class]
+2021-06-16  12:56:09  DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/adminstudioa/IdeaProjects/JavaMentorTasks/JMPreProjectTask_2_2_3_JPA/target/springMVC_hibernate_CRUD-1.0-SNAPSHOT/WEB-INF/classes/org/springMVChibernateCRUD/dao/UserDaoHibernateImp.class]
+2021-06-16  12:56:09  DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/adminstudioa/IdeaProjects/JavaMentorTasks/JMPreProjectTask_2_2_3_JPA/target/springMVC_hibernate_CRUD-1.0-SNAPSHOT/WEB-INF/classes/org/springMVChibernateCRUD/dao/UserDaoJpaImp.class]
+2021-06-16  12:56:09  DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/adminstudioa/IdeaProjects/JavaMentorTasks/JMPreProjectTask_2_2_3_JPA/target/springMVC_hibernate_CRUD-1.0-SNAPSHOT/WEB-INF/classes/org/springMVChibernateCRUD/service/UserServiceImp.class]
+2021-06-16  12:56:09  DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/adminstudioa/IdeaProjects/JavaMentorTasks/JMPreProjectTask_2_2_3_JPA/target/springMVC_hibernate_CRUD-1.0-SNAPSHOT/WEB-INF/classes/org/springMVChibernateCRUD/config/AppConfigDatabase.class]
+2021-06-16  12:56:09  DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/adminstudioa/IdeaProjects/JavaMentorTasks/JMPreProjectTask_2_2_3_JPA/target/springMVC_hibernate_CRUD-1.0-SNAPSHOT/WEB-INF/classes/org/springMVChibernateCRUD/controller/UserController.class]
+2021-06-16  12:56:09  DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/adminstudioa/IdeaProjects/JavaMentorTasks/JMPreProjectTask_2_2_3_JPA/target/springMVC_hibernate_CRUD-1.0-SNAPSHOT/WEB-INF/classes/org/springMVChibernateCRUD/controller/WelcomeController.class]
+2021-06-16  12:56:09  DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/adminstudioa/IdeaProjects/JavaMentorTasks/JMPreProjectTask_2_2_3_JPA/target/springMVC_hibernate_CRUD-1.0-SNAPSHOT/WEB-INF/classes/org/springMVChibernateCRUD/dao/UserDaoHibernateImp.class]
+2021-06-16  12:56:09  DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/adminstudioa/IdeaProjects/JavaMentorTasks/JMPreProjectTask_2_2_3_JPA/target/springMVC_hibernate_CRUD-1.0-SNAPSHOT/WEB-INF/classes/org/springMVChibernateCRUD/dao/UserDaoJpaImp.class]
+2021-06-16  12:56:09  DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/adminstudioa/IdeaProjects/JavaMentorTasks/JMPreProjectTask_2_2_3_JPA/target/springMVC_hibernate_CRUD-1.0-SNAPSHOT/WEB-INF/classes/org/springMVChibernateCRUD/service/UserServiceImp.class]
+2021-06-16  12:56:09  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2021-06-16  12:56:09  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2021-06-16  12:56:09  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2021-06-16  12:56:09  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2021-06-16  12:56:09  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2021-06-16  12:56:09  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2021-06-16  12:56:09  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2021-06-16  12:56:09  DEBUG  o.s.u.c.s.UiApplicationContextUtils - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@5a51cb8c]
+2021-06-16  12:56:09  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'getEMF'
+2021-06-16  12:56:09  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'appConfigDatabase'
+2021-06-16  12:56:09  DEBUG  o.s.c.LocalVariableTableParameterNameDiscoverer - Cannot find '.class' file for class [class org.springMVChibernateCRUD.config.AppConfigDatabase$$EnhancerBySpringCGLIB$$6b5dd3c8] - unable to determine constructor/method parameter names
+2021-06-16  12:56:09  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'appConfigDatabase' via constructor to bean named 'environment'
+2021-06-16  12:56:09  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2021-06-16  12:56:09  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2021-06-16  12:56:09  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'transactionAttributeSource'
+2021-06-16  12:56:09  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'transactionInterceptor'
+2021-06-16  12:56:09  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'transactionInterceptor' via factory method to bean named 'transactionAttributeSource'
+2021-06-16  12:56:09  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionAttributeSource'
+2021-06-16  12:56:09  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionInterceptor'
+2021-06-16  12:56:09  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'getDataSource'
+2021-06-16  12:56:09  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [java:comp/env/db.driver]
+2021-06-16  12:56:09  DEBUG  o.s.jndi.JndiLocatorDelegate - Converted JNDI name [java:comp/env/db.driver] not found - trying original name [db.driver]. javax.naming.NameNotFoundException: Name [db.driver] is not bound in this Context. Unable to find [db.driver].
+2021-06-16  12:56:09  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [db.driver]
+2021-06-16  12:56:09  DEBUG  o.s.jndi.JndiPropertySource - JNDI lookup for name [db.driver] threw NamingException with message: Name [db.driver] is not bound in this Context. Unable to find [db.driver].. Returning null.
+2021-06-16  12:56:09  DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.driver' in PropertySource 'class path resource [db.properties]' with value of type String
+2021-06-16  12:56:09  DEBUG  o.s.j.d.DriverManagerDataSource - Loaded JDBC driver: org.postgresql.Driver
+2021-06-16  12:56:09  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [java:comp/env/db.url]
+2021-06-16  12:56:09  DEBUG  o.s.jndi.JndiLocatorDelegate - Converted JNDI name [java:comp/env/db.url] not found - trying original name [db.url]. javax.naming.NameNotFoundException: Name [db.url] is not bound in this Context. Unable to find [db.url].
+2021-06-16  12:56:09  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [db.url]
+2021-06-16  12:56:09  DEBUG  o.s.jndi.JndiPropertySource - JNDI lookup for name [db.url] threw NamingException with message: Name [db.url] is not bound in this Context. Unable to find [db.url].. Returning null.
+2021-06-16  12:56:09  DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.url' in PropertySource 'class path resource [db.properties]' with value of type String
+2021-06-16  12:56:09  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [java:comp/env/db.username]
+2021-06-16  12:56:09  DEBUG  o.s.jndi.JndiLocatorDelegate - Converted JNDI name [java:comp/env/db.username] not found - trying original name [db.username]. javax.naming.NameNotFoundException: Name [db.username] is not bound in this Context. Unable to find [db.username].
+2021-06-16  12:56:09  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [db.username]
+2021-06-16  12:56:09  DEBUG  o.s.jndi.JndiPropertySource - JNDI lookup for name [db.username] threw NamingException with message: Name [db.username] is not bound in this Context. Unable to find [db.username].. Returning null.
+2021-06-16  12:56:09  DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.username' in PropertySource 'class path resource [db.properties]' with value of type String
+2021-06-16  12:56:09  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [java:comp/env/db.password]
+2021-06-16  12:56:09  DEBUG  o.s.jndi.JndiLocatorDelegate - Converted JNDI name [java:comp/env/db.password] not found - trying original name [db.password]. javax.naming.NameNotFoundException: Name [db.password] is not bound in this Context. Unable to find [db.password].
+2021-06-16  12:56:09  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [db.password]
+2021-06-16  12:56:09  DEBUG  o.s.jndi.JndiPropertySource - JNDI lookup for name [db.password] threw NamingException with message: Name [db.password] is not bound in this Context. Unable to find [db.password].. Returning null.
+2021-06-16  12:56:09  DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.password' in PropertySource 'class path resource [db.properties]' with value of type String
+2021-06-16  12:56:09  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'getHibernateAdapter'
+2021-06-16  12:56:09  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [java:comp/env/hibernate.hbm2ddl.auto]
+2021-06-16  12:56:09  DEBUG  o.s.jndi.JndiLocatorDelegate - Converted JNDI name [java:comp/env/hibernate.hbm2ddl.auto] not found - trying original name [hibernate.hbm2ddl.auto]. javax.naming.NameNotFoundException: Name [hibernate.hbm2ddl.auto] is not bound in this Context. Unable to find [hibernate.hbm2ddl.auto].
+2021-06-16  12:56:09  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [hibernate.hbm2ddl.auto]
+2021-06-16  12:56:09  DEBUG  o.s.jndi.JndiPropertySource - JNDI lookup for name [hibernate.hbm2ddl.auto] threw NamingException with message: Name [hibernate.hbm2ddl.auto] is not bound in this Context. Unable to find [hibernate.hbm2ddl.auto].. Returning null.
+2021-06-16  12:56:09  DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'hibernate.hbm2ddl.auto' in PropertySource 'class path resource [db.properties]' with value of type String
+2021-06-16  12:56:09  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [java:comp/env/hibernate.show_sql]
+2021-06-16  12:56:09  DEBUG  o.s.jndi.JndiLocatorDelegate - Converted JNDI name [java:comp/env/hibernate.show_sql] not found - trying original name [hibernate.show_sql]. javax.naming.NameNotFoundException: Name [hibernate.show_sql] is not bound in this Context. Unable to find [hibernate.show_sql].
+2021-06-16  12:56:09  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [hibernate.show_sql]
+2021-06-16  12:56:09  DEBUG  o.s.jndi.JndiPropertySource - JNDI lookup for name [hibernate.show_sql] threw NamingException with message: Name [hibernate.show_sql] is not bound in this Context. Unable to find [hibernate.show_sql].. Returning null.
+2021-06-16  12:56:09  DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'hibernate.show_sql' in PropertySource 'class path resource [db.properties]' with value of type String
+2021-06-16  12:56:09  DEBUG  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-06-16  12:56:10  DEBUG  o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:postgresql://localhost:5433/spring_hiber]
+2021-06-16  12:56:11  DEBUG  o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:postgresql://localhost:5433/spring_hiber]
+2021-06-16  12:56:11  INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'webViewContextConfig'
+2021-06-16  12:56:11  DEBUG  o.s.c.LocalVariableTableParameterNameDiscoverer - Cannot find '.class' file for class [class org.springMVChibernateCRUD.config.WebViewContextConfig$$EnhancerBySpringCGLIB$$3238c158] - unable to determine constructor/method parameter names
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'webViewContextConfig' via constructor to bean named 'org.springframework.web.context.support.AnnotationConfigWebApplicationContext@127f6d5f'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userController'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userServiceImp'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'UserDaoJpaImp'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'getSessionFactory'
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [java:comp/env/hibernate.hbm2ddl.auto]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiLocatorDelegate - Converted JNDI name [java:comp/env/hibernate.hbm2ddl.auto] not found - trying original name [hibernate.hbm2ddl.auto]. javax.naming.NameNotFoundException: Name [hibernate.hbm2ddl.auto] is not bound in this Context. Unable to find [hibernate.hbm2ddl.auto].
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [hibernate.hbm2ddl.auto]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiPropertySource - JNDI lookup for name [hibernate.hbm2ddl.auto] threw NamingException with message: Name [hibernate.hbm2ddl.auto] is not bound in this Context. Unable to find [hibernate.hbm2ddl.auto].. Returning null.
+2021-06-16  12:56:11  DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'hibernate.hbm2ddl.auto' in PropertySource 'class path resource [db.properties]' with value of type String
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [java:comp/env/hibernate.show_sql]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiLocatorDelegate - Converted JNDI name [java:comp/env/hibernate.show_sql] not found - trying original name [hibernate.show_sql]. javax.naming.NameNotFoundException: Name [hibernate.show_sql] is not bound in this Context. Unable to find [hibernate.show_sql].
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [hibernate.show_sql]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiPropertySource - JNDI lookup for name [hibernate.show_sql] threw NamingException with message: Name [hibernate.show_sql] is not bound in this Context. Unable to find [hibernate.show_sql].. Returning null.
+2021-06-16  12:56:11  DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'hibernate.show_sql' in PropertySource 'class path resource [db.properties]' with value of type String
+2021-06-16  12:56:11  DEBUG  o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:postgresql://localhost:5433/spring_hiber]
+2021-06-16  12:56:11  DEBUG  o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:postgresql://localhost:5433/spring_hiber]
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'userController' via constructor to bean named 'userServiceImp'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'welcomeController'
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [java:comp/env/msg.title]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiLocatorDelegate - Converted JNDI name [java:comp/env/msg.title] not found - trying original name [msg.title]. javax.naming.NameNotFoundException: Name [msg.title] is not bound in this Context. Unable to find [msg.title].
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [msg.title]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiPropertySource - JNDI lookup for name [msg.title] threw NamingException with message: Name [msg.title] is not bound in this Context. Unable to find [msg.title].. Returning null.
+2021-06-16  12:56:11  DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'msg.title' in PropertySource 'class path resource [db.properties]' with value of type String
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'UserDaoHibernateImp'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'requestMappingHandlerMapping'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'mvcConversionService'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'mvcResourceUrlProvider'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcConversionService'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2021-06-16  12:56:11  DEBUG  o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'mvcPathMatcher'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'mvcUrlPathHelper'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'viewControllerHandlerMapping'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcPathMatcher'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcUrlPathHelper'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcConversionService'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'beanNameHandlerMapping'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcConversionService'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'routerFunctionMapping'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcConversionService'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'resourceHandlerMapping'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcUrlPathHelper'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcPathMatcher'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcConversionService'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'defaultServletHandlerMapping'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'requestMappingHandlerAdapter'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'mvcValidator'
+2021-06-16  12:56:11  DEBUG  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider
+javax.validation.NoProviderFoundException: Unable to create a Configuration, because no Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+	at javax.validation.Validation$GenericBootstrapImpl.configure(Validation.java:291)
+	at org.springframework.validation.beanvalidation.LocalValidatorFactoryBean.afterPropertiesSet(LocalValidatorFactoryBean.java:259)
+	at org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean.afterPropertiesSet(OptionalValidatorFactoryBean.java:40)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1858)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1795)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:886)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:790)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:540)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:401)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:292)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4714)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5172)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:717)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:706)
+	at org.apache.catalina.startup.HostConfig.manageApp(HostConfig.java:1775)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:288)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:460)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:408)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:288)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at com.sun.jmx.remote.security.MBeanServerAccessController.invoke(MBeanServerAccessController.java:468)
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1468)
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:76)
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1309)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1408)
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at sun.reflect.GeneratedMethodAccessor266.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:573)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:834)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:688)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:687)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcContentNegotiationManager'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcConversionService'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcValidator'
+2021-06-16  12:56:11  DEBUG  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: none
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'handlerFunctionAdapter'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'mvcConversionService'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'requestMappingHandlerAdapter'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'httpRequestHandlerAdapter'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'simpleControllerHandlerAdapter'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'handlerExceptionResolver'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'handlerExceptionResolver' via factory method to bean named 'mvcContentNegotiationManager'
+2021-06-16  12:56:11  DEBUG  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: none
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'mvcViewResolver'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'mvcViewResolver' via factory method to bean named 'mvcContentNegotiationManager'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'templateEngine'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'templateResolver'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'JpaTransactionManager'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'JpaTransactionManager' via factory method to bean named 'getEMF'
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiLocatorDelegate - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiPropertySource - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2021-06-16  12:56:11  INFO   o.s.web.context.ContextLoader - Root WebApplicationContext initialized in 2505 ms
+2021-06-16  12:56:11  DEBUG  o.s.w.f.HiddenHttpMethodFilter - Filter 'hiddenHttpMethodFilter' configured for use
+2021-06-16  12:56:11  DEBUG  o.s.w.f.CharacterEncodingFilter - Filter 'characterEncoding' configured for use
+2021-06-16  12:56:11  INFO   o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcher'
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiLocatorDelegate - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [spring.profiles.active]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiPropertySource - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiLocatorDelegate - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [spring.profiles.default]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiPropertySource - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2021-06-16  12:56:11  DEBUG  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing WebApplicationContext for namespace 'dispatcher-servlet'
+2021-06-16  12:56:11  DEBUG  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering component classes: [class org.springMVChibernateCRUD.config.WebViewContextConfig]
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2021-06-16  12:56:11  DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/adminstudioa/IdeaProjects/JavaMentorTasks/JMPreProjectTask_2_2_3_JPA/target/springMVC_hibernate_CRUD-1.0-SNAPSHOT/WEB-INF/classes/org/springMVChibernateCRUD/config/AppConfigDatabase.class]
+2021-06-16  12:56:11  DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/adminstudioa/IdeaProjects/JavaMentorTasks/JMPreProjectTask_2_2_3_JPA/target/springMVC_hibernate_CRUD-1.0-SNAPSHOT/WEB-INF/classes/org/springMVChibernateCRUD/controller/UserController.class]
+2021-06-16  12:56:11  DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/adminstudioa/IdeaProjects/JavaMentorTasks/JMPreProjectTask_2_2_3_JPA/target/springMVC_hibernate_CRUD-1.0-SNAPSHOT/WEB-INF/classes/org/springMVChibernateCRUD/controller/WelcomeController.class]
+2021-06-16  12:56:11  DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/adminstudioa/IdeaProjects/JavaMentorTasks/JMPreProjectTask_2_2_3_JPA/target/springMVC_hibernate_CRUD-1.0-SNAPSHOT/WEB-INF/classes/org/springMVChibernateCRUD/dao/UserDaoHibernateImp.class]
+2021-06-16  12:56:11  DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/adminstudioa/IdeaProjects/JavaMentorTasks/JMPreProjectTask_2_2_3_JPA/target/springMVC_hibernate_CRUD-1.0-SNAPSHOT/WEB-INF/classes/org/springMVChibernateCRUD/dao/UserDaoJpaImp.class]
+2021-06-16  12:56:11  DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/adminstudioa/IdeaProjects/JavaMentorTasks/JMPreProjectTask_2_2_3_JPA/target/springMVC_hibernate_CRUD-1.0-SNAPSHOT/WEB-INF/classes/org/springMVChibernateCRUD/service/UserServiceImp.class]
+2021-06-16  12:56:11  DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/adminstudioa/IdeaProjects/JavaMentorTasks/JMPreProjectTask_2_2_3_JPA/target/springMVC_hibernate_CRUD-1.0-SNAPSHOT/WEB-INF/classes/org/springMVChibernateCRUD/config/WebViewContextConfig.class]
+2021-06-16  12:56:11  DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/adminstudioa/IdeaProjects/JavaMentorTasks/JMPreProjectTask_2_2_3_JPA/target/springMVC_hibernate_CRUD-1.0-SNAPSHOT/WEB-INF/classes/org/springMVChibernateCRUD/controller/UserController.class]
+2021-06-16  12:56:11  DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/adminstudioa/IdeaProjects/JavaMentorTasks/JMPreProjectTask_2_2_3_JPA/target/springMVC_hibernate_CRUD-1.0-SNAPSHOT/WEB-INF/classes/org/springMVChibernateCRUD/controller/WelcomeController.class]
+2021-06-16  12:56:11  DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/adminstudioa/IdeaProjects/JavaMentorTasks/JMPreProjectTask_2_2_3_JPA/target/springMVC_hibernate_CRUD-1.0-SNAPSHOT/WEB-INF/classes/org/springMVChibernateCRUD/dao/UserDaoHibernateImp.class]
+2021-06-16  12:56:11  DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/adminstudioa/IdeaProjects/JavaMentorTasks/JMPreProjectTask_2_2_3_JPA/target/springMVC_hibernate_CRUD-1.0-SNAPSHOT/WEB-INF/classes/org/springMVChibernateCRUD/dao/UserDaoJpaImp.class]
+2021-06-16  12:56:11  DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/adminstudioa/IdeaProjects/JavaMentorTasks/JMPreProjectTask_2_2_3_JPA/target/springMVC_hibernate_CRUD-1.0-SNAPSHOT/WEB-INF/classes/org/springMVChibernateCRUD/service/UserServiceImp.class]
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2021-06-16  12:56:11  DEBUG  o.s.u.c.s.UiApplicationContextUtils - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@756c88e0]
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'getEMF'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'appConfigDatabase'
+2021-06-16  12:56:11  DEBUG  o.s.c.LocalVariableTableParameterNameDiscoverer - Cannot find '.class' file for class [class org.springMVChibernateCRUD.config.AppConfigDatabase$$EnhancerBySpringCGLIB$$6b5dd3c8] - unable to determine constructor/method parameter names
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'appConfigDatabase' via constructor to bean named 'environment'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'transactionAttributeSource'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'transactionInterceptor'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'transactionInterceptor' via factory method to bean named 'transactionAttributeSource'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionAttributeSource'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionInterceptor'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'getDataSource'
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [java:comp/env/db.driver]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiLocatorDelegate - Converted JNDI name [java:comp/env/db.driver] not found - trying original name [db.driver]. javax.naming.NameNotFoundException: Name [db.driver] is not bound in this Context. Unable to find [db.driver].
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [db.driver]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiPropertySource - JNDI lookup for name [db.driver] threw NamingException with message: Name [db.driver] is not bound in this Context. Unable to find [db.driver].. Returning null.
+2021-06-16  12:56:11  DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.driver' in PropertySource 'class path resource [db.properties]' with value of type String
+2021-06-16  12:56:11  DEBUG  o.s.j.d.DriverManagerDataSource - Loaded JDBC driver: org.postgresql.Driver
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [java:comp/env/db.url]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiLocatorDelegate - Converted JNDI name [java:comp/env/db.url] not found - trying original name [db.url]. javax.naming.NameNotFoundException: Name [db.url] is not bound in this Context. Unable to find [db.url].
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [db.url]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiPropertySource - JNDI lookup for name [db.url] threw NamingException with message: Name [db.url] is not bound in this Context. Unable to find [db.url].. Returning null.
+2021-06-16  12:56:11  DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.url' in PropertySource 'class path resource [db.properties]' with value of type String
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [java:comp/env/db.username]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiLocatorDelegate - Converted JNDI name [java:comp/env/db.username] not found - trying original name [db.username]. javax.naming.NameNotFoundException: Name [db.username] is not bound in this Context. Unable to find [db.username].
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [db.username]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiPropertySource - JNDI lookup for name [db.username] threw NamingException with message: Name [db.username] is not bound in this Context. Unable to find [db.username].. Returning null.
+2021-06-16  12:56:11  DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.username' in PropertySource 'class path resource [db.properties]' with value of type String
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [java:comp/env/db.password]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiLocatorDelegate - Converted JNDI name [java:comp/env/db.password] not found - trying original name [db.password]. javax.naming.NameNotFoundException: Name [db.password] is not bound in this Context. Unable to find [db.password].
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [db.password]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiPropertySource - JNDI lookup for name [db.password] threw NamingException with message: Name [db.password] is not bound in this Context. Unable to find [db.password].. Returning null.
+2021-06-16  12:56:11  DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.password' in PropertySource 'class path resource [db.properties]' with value of type String
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'getHibernateAdapter'
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [java:comp/env/hibernate.hbm2ddl.auto]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiLocatorDelegate - Converted JNDI name [java:comp/env/hibernate.hbm2ddl.auto] not found - trying original name [hibernate.hbm2ddl.auto]. javax.naming.NameNotFoundException: Name [hibernate.hbm2ddl.auto] is not bound in this Context. Unable to find [hibernate.hbm2ddl.auto].
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [hibernate.hbm2ddl.auto]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiPropertySource - JNDI lookup for name [hibernate.hbm2ddl.auto] threw NamingException with message: Name [hibernate.hbm2ddl.auto] is not bound in this Context. Unable to find [hibernate.hbm2ddl.auto].. Returning null.
+2021-06-16  12:56:11  DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'hibernate.hbm2ddl.auto' in PropertySource 'class path resource [db.properties]' with value of type String
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [java:comp/env/hibernate.show_sql]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiLocatorDelegate - Converted JNDI name [java:comp/env/hibernate.show_sql] not found - trying original name [hibernate.show_sql]. javax.naming.NameNotFoundException: Name [hibernate.show_sql] is not bound in this Context. Unable to find [hibernate.show_sql].
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [hibernate.show_sql]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiPropertySource - JNDI lookup for name [hibernate.show_sql] threw NamingException with message: Name [hibernate.show_sql] is not bound in this Context. Unable to find [hibernate.show_sql].. Returning null.
+2021-06-16  12:56:11  DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'hibernate.show_sql' in PropertySource 'class path resource [db.properties]' with value of type String
+2021-06-16  12:56:11  DEBUG  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-06-16  12:56:11  DEBUG  o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:postgresql://localhost:5433/spring_hiber]
+2021-06-16  12:56:11  DEBUG  o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:postgresql://localhost:5433/spring_hiber]
+2021-06-16  12:56:11  INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'webViewContextConfig'
+2021-06-16  12:56:11  DEBUG  o.s.c.LocalVariableTableParameterNameDiscoverer - Cannot find '.class' file for class [class org.springMVChibernateCRUD.config.WebViewContextConfig$$EnhancerBySpringCGLIB$$3238c158] - unable to determine constructor/method parameter names
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'webViewContextConfig' via constructor to bean named 'org.springframework.web.context.support.AnnotationConfigWebApplicationContext@27cabe99'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userController'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userServiceImp'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'UserDaoJpaImp'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'getSessionFactory'
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [java:comp/env/hibernate.hbm2ddl.auto]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiLocatorDelegate - Converted JNDI name [java:comp/env/hibernate.hbm2ddl.auto] not found - trying original name [hibernate.hbm2ddl.auto]. javax.naming.NameNotFoundException: Name [hibernate.hbm2ddl.auto] is not bound in this Context. Unable to find [hibernate.hbm2ddl.auto].
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [hibernate.hbm2ddl.auto]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiPropertySource - JNDI lookup for name [hibernate.hbm2ddl.auto] threw NamingException with message: Name [hibernate.hbm2ddl.auto] is not bound in this Context. Unable to find [hibernate.hbm2ddl.auto].. Returning null.
+2021-06-16  12:56:11  DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'hibernate.hbm2ddl.auto' in PropertySource 'class path resource [db.properties]' with value of type String
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [java:comp/env/hibernate.show_sql]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiLocatorDelegate - Converted JNDI name [java:comp/env/hibernate.show_sql] not found - trying original name [hibernate.show_sql]. javax.naming.NameNotFoundException: Name [hibernate.show_sql] is not bound in this Context. Unable to find [hibernate.show_sql].
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [hibernate.show_sql]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiPropertySource - JNDI lookup for name [hibernate.show_sql] threw NamingException with message: Name [hibernate.show_sql] is not bound in this Context. Unable to find [hibernate.show_sql].. Returning null.
+2021-06-16  12:56:11  DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'hibernate.show_sql' in PropertySource 'class path resource [db.properties]' with value of type String
+2021-06-16  12:56:11  DEBUG  o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:postgresql://localhost:5433/spring_hiber]
+2021-06-16  12:56:11  DEBUG  o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:postgresql://localhost:5433/spring_hiber]
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'userController' via constructor to bean named 'userServiceImp'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'welcomeController'
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [java:comp/env/msg.title]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiLocatorDelegate - Converted JNDI name [java:comp/env/msg.title] not found - trying original name [msg.title]. javax.naming.NameNotFoundException: Name [msg.title] is not bound in this Context. Unable to find [msg.title].
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [msg.title]
+2021-06-16  12:56:11  DEBUG  o.s.jndi.JndiPropertySource - JNDI lookup for name [msg.title] threw NamingException with message: Name [msg.title] is not bound in this Context. Unable to find [msg.title].. Returning null.
+2021-06-16  12:56:11  DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'msg.title' in PropertySource 'class path resource [db.properties]' with value of type String
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'UserDaoHibernateImp'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'JpaTransactionManager'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'JpaTransactionManager' via factory method to bean named 'getEMF'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2021-06-16  12:56:11  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'requestMappingHandlerMapping'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'mvcConversionService'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'mvcResourceUrlProvider'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcConversionService'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2021-06-16  12:56:12  DEBUG  o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'mvcPathMatcher'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'mvcUrlPathHelper'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'viewControllerHandlerMapping'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcPathMatcher'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcUrlPathHelper'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcConversionService'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'beanNameHandlerMapping'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcConversionService'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'routerFunctionMapping'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcConversionService'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'resourceHandlerMapping'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcUrlPathHelper'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcPathMatcher'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcConversionService'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'defaultServletHandlerMapping'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'requestMappingHandlerAdapter'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'mvcValidator'
+2021-06-16  12:56:12  DEBUG  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider
+javax.validation.NoProviderFoundException: Unable to create a Configuration, because no Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+	at javax.validation.Validation$GenericBootstrapImpl.configure(Validation.java:291)
+	at org.springframework.validation.beanvalidation.LocalValidatorFactoryBean.afterPropertiesSet(LocalValidatorFactoryBean.java:259)
+	at org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean.afterPropertiesSet(OptionalValidatorFactoryBean.java:40)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1858)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1795)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:886)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:790)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:540)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:578)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1134)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:986)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4902)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5206)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:717)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:706)
+	at org.apache.catalina.startup.HostConfig.manageApp(HostConfig.java:1775)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:288)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:460)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:408)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:288)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at com.sun.jmx.remote.security.MBeanServerAccessController.invoke(MBeanServerAccessController.java:468)
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1468)
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:76)
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1309)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1408)
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at sun.reflect.GeneratedMethodAccessor266.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:573)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:834)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:688)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:687)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcContentNegotiationManager'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcConversionService'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcValidator'
+2021-06-16  12:56:12  DEBUG  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: none
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'handlerFunctionAdapter'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'mvcConversionService'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'requestMappingHandlerAdapter'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'httpRequestHandlerAdapter'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'simpleControllerHandlerAdapter'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'handlerExceptionResolver'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'handlerExceptionResolver' via factory method to bean named 'mvcContentNegotiationManager'
+2021-06-16  12:56:12  DEBUG  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: none
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'mvcViewResolver'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'mvcViewResolver' via factory method to bean named 'mvcContentNegotiationManager'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'templateEngine'
+2021-06-16  12:56:12  DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'templateResolver'
+2021-06-16  12:56:12  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2021-06-16  12:56:12  DEBUG  o.s.jndi.JndiLocatorDelegate - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2021-06-16  12:56:12  DEBUG  o.s.jndi.JndiTemplate - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2021-06-16  12:56:12  DEBUG  o.s.jndi.JndiPropertySource - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2021-06-16  12:56:12  DEBUG  o.s.w.s.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-06-16  12:56:12  INFO   o.s.w.s.DispatcherServlet - Completed initialization in 218 ms
+2021-06-16  12:57:12  DEBUG  o.s.w.c.s.AnnotationConfigWebApplicationContext - Closing WebApplicationContext for namespace 'dispatcher-servlet', started on Wed Jun 16 12:56:11 ICT 2021, parent: Root WebApplicationContext
+2021-06-16  12:57:12  INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-16  12:57:12  DEBUG  o.s.w.c.s.AnnotationConfigWebApplicationContext - Closing Root WebApplicationContext, started on Wed Jun 16 12:56:09 ICT 2021
+2021-06-16  12:57:12  INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+#logback.classic pattern: %d{yyyy-MM-dd  HH:mm:ss}  %-6level %logger{30} - %msg%n
+2021-06-16  12:57:13  INFO   o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+2021-06-16  12:57:16  INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-16  12:57:16  INFO   o.s.web.context.ContextLoader - Root WebApplicationContext initialized in 2528 ms
+2021-06-16  12:57:16  INFO   o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcher'
+2021-06-16  12:57:16  INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-16  12:57:16  INFO   o.s.w.s.DispatcherServlet - Completed initialization in 204 ms
+2021-06-16  12:57:30  INFO   o.s.controller.UserController - UserController try to get userById  - started
+2021-06-16  12:57:30  INFO   o.s.controller.UserController - UserController try to get userById - ended
+2021-06-16  12:57:31  INFO   o.s.controller.UserController - UserController try to get all users list - started
+2021-06-16  12:57:31  INFO   o.s.controller.UserController - UserController try to get all users list - ended
+2021-06-16  12:57:32  INFO   o.s.c.WelcomeController - welcome page started
+2021-06-16  12:57:32  INFO   o.s.c.WelcomeController - welcome() is executed, value sergei
+2021-06-16  12:57:32  INFO   o.s.c.WelcomeController - info level log test
+2021-06-16  12:57:32  WARN   o.s.c.WelcomeController - warning log test
+2021-06-16  12:57:32  ERROR  o.s.c.WelcomeController - This is TEST !!!!! Error message
+2021-06-16  12:57:32  INFO   o.s.c.WelcomeController - welcome page ended
+2021-06-16  12:58:03  INFO   o.s.controller.UserController - UserController try to get all users list - started
+2021-06-16  12:58:03  INFO   o.s.controller.UserController - UserController try to get all users list - ended
+2021-06-16  12:58:08  INFO   o.s.controller.UserController - UserController addUser() start "GET" mapping
+2021-06-16  12:58:16  INFO   o.s.controller.UserController - UserController createNewUser - started
+2021-06-16  12:58:16  INFO   o.s.controller.UserController - UserController created newUser() - ended
+2021-06-16  12:58:16  INFO   o.s.controller.UserController - UserController try to get all users list - started
+2021-06-16  12:58:16  INFO   o.s.controller.UserController - UserController try to get all users list - ended
+2021-06-16  13:02:15  INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-16  13:02:15  INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+#logback.classic pattern: %d{yyyy-MM-dd  HH:mm:ss}  %-6level %logger{30} - %msg%n
+2021-06-16  13:02:16  INFO   o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+2021-06-16  13:02:18  INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-16  13:02:19  INFO   o.s.web.context.ContextLoader - Root WebApplicationContext initialized in 2325 ms
+2021-06-16  13:02:19  INFO   o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcher'
+2021-06-16  13:02:19  INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-16  13:02:19  INFO   o.s.w.s.DispatcherServlet - Completed initialization in 226 ms
+2021-06-16  13:02:34  INFO   o.s.c.WelcomeController - welcome page started
+2021-06-16  13:02:34  INFO   o.s.c.WelcomeController - welcome() is executed, value sergei
+2021-06-16  13:02:34  INFO   o.s.c.WelcomeController - info level log test
+2021-06-16  13:02:34  WARN   o.s.c.WelcomeController - warning log test
+2021-06-16  13:02:34  ERROR  o.s.c.WelcomeController - This is TEST !!!!! Error message
+2021-06-16  13:02:34  INFO   o.s.c.WelcomeController - welcome page ended
+2021-06-16  13:03:05  INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-16  13:03:05  INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+#logback.classic pattern: %d{yyyy-MM-dd  HH:mm:ss}  %-6level %logger{30} - %msg%n
+2021-06-16  13:03:07  INFO   o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+2021-06-16  13:03:09  INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-16  13:03:09  INFO   o.s.web.context.ContextLoader - Root WebApplicationContext initialized in 2446 ms
+2021-06-16  13:03:09  INFO   o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcher'
+2021-06-16  13:03:09  INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-16  13:03:09  INFO   o.s.w.s.DispatcherServlet - Completed initialization in 207 ms
+2021-06-16  13:03:18  INFO   o.s.c.WelcomeController - welcome page started
+2021-06-16  13:03:18  INFO   o.s.c.WelcomeController - welcome() is executed, value sergei
+2021-06-16  13:03:18  TRACE  o.s.c.WelcomeController - trace log test
+2021-06-16  13:03:18  DEBUG  o.s.c.WelcomeController - debug level log test
+2021-06-16  13:03:18  INFO   o.s.c.WelcomeController - info level log test
+2021-06-16  13:03:18  WARN   o.s.c.WelcomeController - warning log test
+2021-06-16  13:03:18  ERROR  o.s.c.WelcomeController - This is TEST !!!!! Error message
+2021-06-16  13:03:18  INFO   o.s.c.WelcomeController - welcome page ended
+2021-06-16  13:04:09  INFO   o.s.controller.UserController - get all users list - started
+2021-06-16  13:04:09  INFO   o.s.controller.UserController - get all users list - ended
+2021-06-16  13:04:10  INFO   o.s.controller.UserController - addUser() "GET" mapping - started
+2021-06-16  13:04:12  INFO   o.s.controller.UserController - createNewUser - started
+2021-06-16  13:04:12  INFO   o.s.controller.UserController - created newUser() - ended
+2021-06-16  13:04:12  INFO   o.s.controller.UserController - get all users list - started
+2021-06-16  13:04:12  INFO   o.s.controller.UserController - get all users list - ended
+2021-06-16  13:04:14  INFO   o.s.c.WelcomeController - welcome page started
+2021-06-16  13:04:14  INFO   o.s.c.WelcomeController - welcome() is executed, value sergei
+2021-06-16  13:04:14  TRACE  o.s.c.WelcomeController - trace log test
+2021-06-16  13:04:14  DEBUG  o.s.c.WelcomeController - debug level log test
+2021-06-16  13:04:14  INFO   o.s.c.WelcomeController - info level log test
+2021-06-16  13:04:14  WARN   o.s.c.WelcomeController - warning log test
+2021-06-16  13:04:14  ERROR  o.s.c.WelcomeController - This is TEST !!!!! Error message
+2021-06-16  13:04:14  INFO   o.s.c.WelcomeController - welcome page ended
+2021-06-16  13:04:15  INFO   o.s.controller.UserController - get all users list - started
+2021-06-16  13:04:15  INFO   o.s.controller.UserController - get all users list - ended
+2021-06-16  13:04:16  INFO   o.s.controller.UserController - get userById  - started
+2021-06-16  13:04:16  INFO   o.s.controller.UserController - get userById - ended
+2021-06-16  13:04:17  INFO   o.s.controller.UserController - DELETE userById - started
+2021-06-16  13:04:17  INFO   o.s.controller.UserController - DELETE userById - ended
+2021-06-16  13:04:17  INFO   o.s.controller.UserController - get all users list - started
+2021-06-16  13:04:17  INFO   o.s.controller.UserController - get all users list - ended
+2021-06-16  13:04:19  INFO   o.s.controller.UserController - get userById  - started
+2021-06-16  13:04:19  INFO   o.s.controller.UserController - get userById - ended
+2021-06-16  13:04:21  INFO   o.s.controller.UserController - DELETE userById - started
+2021-06-16  13:04:21  INFO   o.s.controller.UserController - DELETE userById - ended
+2021-06-16  13:04:21  INFO   o.s.controller.UserController - get all users list - started
+2021-06-16  13:04:21  INFO   o.s.controller.UserController - get all users list - ended
+2021-06-16  13:04:23  INFO   o.s.c.WelcomeController - welcome page started
+2021-06-16  13:04:23  INFO   o.s.c.WelcomeController - welcome() is executed, value sergei
+2021-06-16  13:04:23  TRACE  o.s.c.WelcomeController - trace log test
+2021-06-16  13:04:23  DEBUG  o.s.c.WelcomeController - debug level log test
+2021-06-16  13:04:23  INFO   o.s.c.WelcomeController - info level log test
+2021-06-16  13:04:23  WARN   o.s.c.WelcomeController - warning log test
+2021-06-16  13:04:23  ERROR  o.s.c.WelcomeController - This is TEST !!!!! Error message
+2021-06-16  13:04:23  INFO   o.s.c.WelcomeController - welcome page ended

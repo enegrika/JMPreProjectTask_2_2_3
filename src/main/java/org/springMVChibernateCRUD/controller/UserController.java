@@ -34,7 +34,7 @@ public class UserController {
     // OPEN FORM for adding new user
     @GetMapping("/newUser")
     public String addUser(@ModelAttribute("newUse") User user) {
-        logger.info("UserController addUser() start \"GET\" mapping");
+        logger.info("addUser() \"GET\" mapping - started");
         return "/users/newUser";
     }
 
@@ -42,13 +42,13 @@ public class UserController {
     @PostMapping
     public String createNewUser(@ModelAttribute("newUser") @Valid User user,
                                 BindingResult bindingResult) {
-        logger.info("UserController createNewUser - started");
+        logger.info("createNewUser - started");
         if (bindingResult.hasErrors()) {
-            logger.info("UserController createNewUser() has fields error");
+            logger.warn("createNewUser() - has fields error");
             return "/users/newUser";
         }
         userService.addUser(user);
-        logger.info("UserController created newUser() - ended");
+        logger.info("created newUser() - ended");
 
         return "redirect:/users";
     }
@@ -58,19 +58,18 @@ public class UserController {
     // GET ALL USERS LIST
     @GetMapping
     public String getListUsers(Model model) {
-        logger.info("UserController try to get all users list - started");
+        logger.info("get all users list - started");
         model.addAttribute("userList", userService.getListUsers());
-        logger.info("UserController try to get all users list - ended");
+        logger.info("get all users list - ended");
         return "/users/userList";
     }
 
     //GET one USER by ID
     @GetMapping(value = "/{id}")
     public String getUser(@PathVariable(name = "id") Long id, Model model) {
-        logger.info("UserController try to get userById  - started");
-
+        logger.info("get userById  - started");
         model.addAttribute("userById", userService.getUser(id));
-        logger.info("UserController try to get userById - ended");
+        logger.info("get userById - ended");
 
         return "/users/showUser";
     }
@@ -79,9 +78,9 @@ public class UserController {
 
     @GetMapping(value = "/{id}/editUser")
     public String editUserRequest(@PathVariable("id") long id, Model model) {
-        logger.info("UserController try to GET EDIT userById - started");
+        logger.info("GET EDIT form userById - started");
         model.addAttribute("userById", userService.getUser(id));
-        logger.info("UserController try to GET EDIT userById - ended");
+        logger.info("GET EDIT userById - ended");
         return "/users/editUser";
     }
 
@@ -90,16 +89,16 @@ public class UserController {
                              BindingResult bindingResult,
                              @PathVariable("id") long id,
                              Model model) {
-        logger.info("UserController try to PATCH(UPDATE) userById - started");
+        logger.info("PATCH(UPDATE) userById - started");
 
 
         if (bindingResult.hasErrors()) {
-            logger.info("UserController try to PATCH (UPDATE) userById - error with entered parameters");
+            logger.warn("PATCH (UPDATE) userById - error with entered parameters");
 
             return "/users/editUser";
         }
         userService.updateUser(id, user);
-        logger.info("UserController try to PATCH (UPDATE) userById - ended");
+        logger.info("PATCH (UPDATE) userById - ended");
         return "redirect:/users";
     }
 
@@ -108,11 +107,11 @@ public class UserController {
     public String deleteUser(@ModelAttribute("userById") User user,
                              @PathVariable("id") Long id,
                              Model model) {
-        logger.info("UserController DELETE userById - started");
+        logger.info("DELETE userById - started");
 
         userService.deleteUser(id);
 
-        logger.info("UserController DELETE userById - ended");
+        logger.info("DELETE userById - ended");
 
         return "redirect:/users";
     }

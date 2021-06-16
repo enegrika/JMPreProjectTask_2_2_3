@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-    <property name="HOME_LOG"
-              value="C:/Users/serge/IdeaProjects/JavaMentorPreProject/JMPreProjectTask_2_2_3/src/logs/logback.log"/>
+    <property name="HOME_LOG" value="/Users/adminstudioa/IdeaProjects/JavaMentorTasks/JMPreProjectTask_2_2_3_JPA/src/logs/logback.log"/>
+<!--              value="C:/Users/serge/IdeaProjects/JavaMentorPreProject/JMPreProjectTask_2_2_3/src/logs/logback.log"/>-->
+
+
     <!-- On Windows machines setting withJansi to true enables ANSI
             color code interpretation by the Jansi library. This requires
             org.fusesource.jansi:jansi:1.8 on the class path.  Note that
@@ -33,7 +35,7 @@
 
         <!--        view pattern-->
         <encoder>
-            <pattern>%d{yyyy-MM-dd HH:mm:ss} %highlight(%-5level) %cyan(%logger{15}) - %green(%msg%n)</pattern>
+            <pattern>%d{yyyy-MM-dd  HH:mm:ss}  %-6level %logger{30} - %msg%n</pattern>
             <outputPatternAsHeader>true</outputPatternAsHeader>
         </encoder>
     </appender>
@@ -54,17 +56,29 @@
 
 <!--    DIFFERENT LOGGERS-->
 
+<!--    out to console everything from spring framework -->
     <logger name="org.springframework" level="debug" additivity="false">
         <appender-ref ref="STDOUT"/>
     </logger>
 
-    <logger name="org.springMVChibernateCRUD" level="debug" additivity="false">
+<!--    out to console - everything from webapp-->
+    <logger name="org.springMVChibernateCRUD" level="info" additivity="false">
         <appender-ref ref="STDOUT"/>
     </logger>
 
-    <logger name="org.springMVChibernateCRUD" level="info" additivity="false">
+    <!--    out to console everything from spring framework -->
+    <logger name="org.springframework" level="info" additivity="false">
         <appender-ref ref="ASYNC"/>
     </logger>
+
+    <!--    out to file - everything from webapp-->
+    <logger name="org.springMVChibernateCRUD" level="trace" additivity="false">
+        <appender-ref ref="ASYNC"/>
+    </logger>
+
+
+
+<!--    // default root and level for logs output-->
 
     <root level="debug">
         <appender-ref ref="STDOUT"/>
